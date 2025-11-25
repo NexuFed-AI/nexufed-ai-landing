@@ -11,26 +11,49 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      {/* Animated background grid and particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Animated grid lines */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px',
-            animation: 'grid-move 20s linear infinite'
-          }} />
-        </div>
+      {/* Network mesh background - representing federated learning nodes */}
+      <div className="absolute inset-0 overflow-hidden opacity-40">
+        {/* SVG for connection lines between nodes */}
+        <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0" />
+              <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          
+          {/* Connection lines - subtle mesh network */}
+          <line x1="15%" y1="20%" x2="35%" y2="30%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" />
+          <line x1="35%" y1="30%" x2="60%" y2="25%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "1s" }} />
+          <line x1="60%" y1="25%" x2="80%" y2="35%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "2s" }} />
+          <line x1="15%" y1="20%" x2="20%" y2="50%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "0.5s" }} />
+          <line x1="20%" y1="50%" x2="45%" y2="60%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "1.5s" }} />
+          <line x1="45%" y1="60%" x2="70%" y2="55%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "2.5s" }} />
+          <line x1="70%" y1="55%" x2="85%" y2="65%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "3s" }} />
+          <line x1="35%" y1="30%" x2="45%" y2="60%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "0.8s" }} />
+          <line x1="60%" y1="25%" x2="70%" y2="55%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "1.8s" }} />
+          <line x1="20%" y1="50%" x2="35%" y2="75%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "2.2s" }} />
+          <line x1="35%" y1="75%" x2="65%" y2="80%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "2.8s" }} />
+          <line x1="65%" y1="80%" x2="85%" y2="65%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "1.2s" }} />
+          <line x1="45%" y1="60%" x2="65%" y2="80%" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse-line" style={{ animationDelay: "3.5s" }} />
+        </svg>
         
-        {/* Slow-moving gradient orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float-slow" />
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: "3s" }} />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-primary/8 rounded-full blur-3xl animate-float-slow" style={{ animationDelay: "6s" }} />
+        {/* Network nodes - distributed sensor points */}
+        <div className="absolute top-[20%] left-[15%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" />
+        <div className="absolute top-[30%] left-[35%] w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-[25%] left-[60%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-[35%] left-[80%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "0.5s" }} />
+        <div className="absolute top-[50%] left-[20%] w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-[60%] left-[45%] w-3 h-3 bg-primary rounded-full animate-pulse-node shadow-[0_0_15px_hsl(var(--primary))]" style={{ animationDelay: "2.5s" }} />
+        <div className="absolute top-[55%] left-[70%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "3s" }} />
+        <div className="absolute top-[65%] left-[85%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "0.8s" }} />
+        <div className="absolute top-[75%] left-[35%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "2.2s" }} />
+        <div className="absolute top-[80%] left-[65%] w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1.8s" }} />
         
-        {/* Scanning line effect */}
-        <div className="absolute inset-0 overflow-hidden opacity-30">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent animate-scan" />
-        </div>
+        {/* Subtle ambient glow */}
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 py-32 relative z-10">

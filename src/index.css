@@ -108,41 +108,31 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
   
-  @keyframes grid-move {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(50px, 50px);
-    }
-  }
-  
-  @keyframes float-slow {
+  @keyframes pulse-node {
     0%, 100% {
-      transform: translate(0, 0) scale(1);
+      opacity: 0.4;
+      transform: scale(1);
     }
-    33% {
-      transform: translate(30px, -30px) scale(1.05);
-    }
-    66% {
-      transform: translate(-20px, 20px) scale(0.95);
-    }
-  }
-  
-  @keyframes scan {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(100vh);
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
     }
   }
   
-  .animate-float-slow {
-    animation: float-slow 15s ease-in-out infinite;
+  @keyframes pulse-line {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.6;
+    }
   }
   
-  .animate-scan {
-    animation: scan 8s linear infinite;
+  .animate-pulse-node {
+    animation: pulse-node 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-line {
+    animation: pulse-line 5s ease-in-out infinite;
   }
 }
