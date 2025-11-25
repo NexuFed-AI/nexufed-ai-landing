@@ -77,19 +77,13 @@ const Contact = () => {
 
               <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground">
                 <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
-                <p className="text-lg mb-6 opacity-90">Choose how you'd like to connect with us.</p>
+                <p className="text-lg mb-6 opacity-90">We're here to answer your questions.</p>
 
-                <div className="space-y-4">
-                  <Button className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
+                <div className="flex justify-center">
+                  <Button className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8" asChild>
                     <a onClick={() => trackEvent('click', 'Contact', 'Send Email')} href="mailto:info@nexufed.ai">
                       <Mail className="mr-2 w-4 h-4" />
                       Send Email
-                    </a>
-                  </Button>
-                  <Button variant="outline" className="w-full border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                    <a href="https://calendar.app.google/3nbWmAa28nR9ymfF7" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('click', 'Contact', 'Schedule Meeting')}>
-                      <Calendar className="mr-2 w-4 h-4" />
-                      Schedule Meeting
                     </a>
                   </Button>
                 </div>
