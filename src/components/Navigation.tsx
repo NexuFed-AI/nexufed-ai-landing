@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo-long.png";
 
 const Navigation = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,31 +17,50 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={logo} alt="NexuFed AI" className="h-8 md:h-10" />
-          </div>
+          </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <button 
-              onClick={() => scrollToSection("technology")}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-            >
-              Technology
-            </button>
-            <button 
-              onClick={() => scrollToSection("benefits")}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-            >
-              Benefits
-            </button>
-            <button 
-              onClick={() => scrollToSection("contact")}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-            >
-              Contact
-            </button>
+            {isHomePage ? (
+              <>
+                <button 
+                  onClick={() => scrollToSection("technology")}
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  Technology
+                </button>
+                <button 
+                  onClick={() => scrollToSection("benefits")}
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  Benefits
+                </button>
+                <button 
+                  onClick={() => scrollToSection("contact")}
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  Contact
+                </button>
+              </>
+            ) : (
+              <>
+                <Link 
+                  to="/"
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  Home
+                </Link>
+                <Link 
+                  to="/about"
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  About
+                </Link>
+              </>
+            )}
             <Button 
-              onClick={() => scrollToSection("contact")}
+              onClick={() => isHomePage ? scrollToSection("contact") : window.location.href = "/#contact"}
               className="bg-accent hover:bg-accent/90"
             >
               Get in Touch
@@ -46,7 +69,7 @@ const Navigation = () => {
 
           <div className="md:hidden">
             <Button 
-              onClick={() => scrollToSection("contact")}
+              onClick={() => isHomePage ? scrollToSection("contact") : window.location.href = "/#contact"}
               size="sm"
               className="bg-accent hover:bg-accent/90"
             >
