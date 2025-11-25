@@ -44,21 +44,19 @@ const Navigation = () => {
                 </button>
               </>
             ) : (
-              <>
-                <Link 
-                  to="/"
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-                >
-                  Home
-                </Link>
-                <Link 
-                  to="/about"
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-                >
-                  About
-                </Link>
-              </>
+              <Link 
+                to="/"
+                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+              >
+                Home
+              </Link>
             )}
+            <Link 
+              to="/about"
+              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+            >
+              About
+            </Link>
             <Button 
               onClick={() => isHomePage ? scrollToSection("contact") : window.location.href = "/#contact"}
               className="bg-accent hover:bg-accent/90"
