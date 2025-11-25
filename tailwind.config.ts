@@ -49,10 +49,8 @@ export default {
         },
         brand: {
           dark: "hsl(var(--brand-dark))",
-          medium: "hsl(var(--brand-medium))",
-          light: "hsl(var(--brand-light))",
-          "gray-dark": "hsl(var(--brand-gray-dark))",
-          "gray-light": "hsl(var(--brand-gray-light))",
+          accent: "hsl(var(--brand-accent))",
+          gray: "hsl(var(--brand-gray))",
         },
       },
       borderRadius: {
