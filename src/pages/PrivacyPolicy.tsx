@@ -1,18 +1,15 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
-
 const PrivacyPolicy = () => {
   usePageTracking();
-  
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       <main className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-primary">
-            Privacy Policy
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Privacy policy in accordance with Art. 13 GDPR
+
+        </h1>
 
           <div className="space-y-8 text-foreground">
             <section>
@@ -181,8 +178,6 @@ const PrivacyPolicy = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default PrivacyPolicy;
