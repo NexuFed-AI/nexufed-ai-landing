@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary/20 pt-8 text-center text-sm text-muted-foreground">
-          <p>© 2025 NexuFed AI. Research/startup project (not an incorporated company).</p>
+          <p>© 2025 Nexus Federated Project     </p>
         </div>
       </div>
     </footer>;
