@@ -39,6 +39,17 @@ const CookieConsent = () => {
         console.error("Error parsing cookie consent:", e);
       }
     }
+
+    // Listen for cookie settings open event
+    const handleOpenCookieSettings = () => {
+      setShowSettings(true);
+    };
+    
+    window.addEventListener('openCookieSettings', handleOpenCookieSettings);
+    
+    return () => {
+      window.removeEventListener('openCookieSettings', handleOpenCookieSettings);
+    };
   }, []);
 
   const initializeAnalytics = () => {

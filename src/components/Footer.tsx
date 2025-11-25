@@ -53,6 +53,17 @@ const Footer = () => {
                   Datenschutzerklärung
                 </a>
               </li>
+              <li>
+                <button
+                  onClick={() => {
+                    trackEvent('click', 'Footer', 'Cookie Settings');
+                    window.dispatchEvent(new Event('openCookieSettings'));
+                  }}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Cookie-Einstellungen
+                </button>
+              </li>
             </ul>
           </div>
 
