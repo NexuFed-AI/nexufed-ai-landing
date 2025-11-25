@@ -52,6 +52,12 @@ const Navigation = () => {
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
+            <Link 
+              to="/"
+              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+            >
+              Home
+            </Link>
             <button 
               onClick={() => handleNavigateToSection("technology")}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
