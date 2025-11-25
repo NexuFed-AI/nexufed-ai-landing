@@ -96,9 +96,8 @@ const Contact = () => {
               </div>
 
               <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground">
-                <h3 className="text-2xl font-bold mb-4">René Glitza</h3>
-                <p className="text-lg mb-6 opacity-90">Founder & CTO — NexuFed AI</p>
-                <p className="mb-6 opacity-90">Applied Data Science & Federated Learning</p>
+                <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
+                <p className="text-lg mb-6 opacity-90">Choose how you'd like to connect with us.</p>
 
                 <div className="space-y-4">
                   <Button className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
