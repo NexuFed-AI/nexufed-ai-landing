@@ -1,12 +1,9 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
-
 const Imprint = () => {
   usePageTracking();
-  
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       <main className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto">
@@ -49,9 +46,7 @@ const Imprint = () => {
               <h2 className="text-2xl font-bold mb-4 text-primary">
                 Information according to §5 Digital Services Act (DDG)
               </h2>
-              <p className="leading-relaxed mb-4">
-                This website is a project website for a publicly funded research transfer project, which is carried out within the framework of the "EXIST Research Transfer" at the Ruhr University Bochum.
-              </p>
+              <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI. The project is based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center. Ruhr University Bochum is not the operator of this website and does not provide funding for the project.</p>
               <p className="leading-relaxed mb-4">
                 <strong>Project name:</strong> NexuFed AI<br />
                 Ruhr-Universität Bochum<br />
@@ -72,9 +67,7 @@ const Imprint = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">Project Status</h2>
-              <p className="leading-relaxed">
-                NexuFed AI is an EXIST research transfer project (funding phase I) at the Ruhr University Bochum funded by the Federal Ministry for Economic Affairs and Energy. It is currently not an independent legal entity.
-              </p>
+              <p className="leading-relaxed">NexuFed AI is a research-based start-up project based at the Ruhr University Bochum. It is currently not an independent legal entity.</p>
             </section>
 
             <section>
@@ -127,8 +120,6 @@ const Imprint = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Imprint;
