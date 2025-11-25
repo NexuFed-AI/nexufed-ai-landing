@@ -24,18 +24,6 @@ const Imprint = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-primary">Post Address</h2>
-              <p className="leading-relaxed">
-                René Glitza<br />
-                c/o Ruhr-Universität Bochum<br />
-                Institut für Kommunikationsakustik<br />
-                Gebäude ID / Fachnr. 36<br />
-                Universitätsstr. 150<br />
-                44801 Bochum
-              </p>
-            </section>
-
-            <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
                 Information according to §5 Digital Services Act (DDG)
               </h2>
@@ -53,11 +41,21 @@ René Glitza
 Luca Becker<strong>Authorized representative and responsible for the project:</strong><br />
                 René Glitza
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed mb-4">
                 <strong>Contact:</strong><br />
                 E-mail: info@nexufed.ai<br />
                 Phone: +49 234 32 18591<br />
                 Website: www.nexufed.ai
+              </p>
+              
+              <p className="leading-relaxed">
+                <strong>Post Address:</strong><br />
+                René Glitza<br />
+                c/o Ruhr-Universität Bochum<br />
+                Institut für Kommunikationsakustik<br />
+                Gebäude ID / Fachnr. 36<br />
+                Universitätsstr. 150<br />
+                44801 Bochum
               </p>
             </section>
 
