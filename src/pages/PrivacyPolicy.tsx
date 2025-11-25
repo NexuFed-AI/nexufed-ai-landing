@@ -153,7 +153,7 @@ const PrivacyPolicy = () => {
               </p>
               <ul className="list-disc list-inside leading-relaxed mb-4 space-y-1">
                 <li><strong>YouTube:</strong> The embedded video on the homepage will only be loaded after your consent (see point 5).</li>
-                <li><strong>External links:</strong> Logos and links to platforms such as LinkedIn and YouTube lead to external sites. These platforms may – after your active use – set cookies and process data.</li>
+                <li><strong>External links:</strong> Logos and links to platforms such as LinkedIn and Github lead to external sites. These platforms may – after your active use – set cookies and process data.</li>
               </ul>
 
               <h3 className="text-xl font-semibold mb-3">b) Technically necessary cookies</h3>
