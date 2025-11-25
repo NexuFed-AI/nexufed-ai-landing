@@ -1,12 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import logo from "@/assets/logo-long.png";
 
 const Navigation = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleHomeClick = () => {
     if (isHomePage) {
@@ -38,6 +45,7 @@ const Navigation = () => {
   };
 
   const handleNavigateToSection = (sectionId: string) => {
+    setIsOpen(false); // Close mobile menu
     if (isHomePage) {
       scrollToSection(sectionId);
     } else {
@@ -113,13 +121,70 @@ const Navigation = () => {
           </div>
 
           <div className="md:hidden">
-            <Button 
-              onClick={() => handleNavigateToSection("contact")}
-              size="sm"
-              className="bg-accent hover:bg-accent/90"
-            >
-              Contact
-            </Button>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="h-10 w-10">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px] sm:w-[320px]">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-center py-6 border-b border-border">
+                    <img src={logo} alt="NexuFed AI" className="h-8" />
+                  </div>
+                  
+                  <nav className="flex flex-col gap-4 py-8 flex-1">
+                    <button 
+                      onClick={() => {
+                        handleHomeClick();
+                        setIsOpen(false);
+                      }}
+                      className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
+                    >
+                      Home
+                    </button>
+                    <button 
+                      onClick={() => handleNavigateToSection("technology")}
+                      className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
+                    >
+                      Technology
+                    </button>
+                    <button 
+                      onClick={() => handleNavigateToSection("benefits")}
+                      className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
+                    >
+                      Benefits
+                    </button>
+                    <button 
+                      onClick={() => {
+                        handleAboutClick();
+                        setIsOpen(false);
+                      }}
+                      className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
+                    >
+                      About
+                    </button>
+                    <Link 
+                      to="/careers"
+                      onClick={() => setIsOpen(false)}
+                      className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
+                    >
+                      Careers
+                    </Link>
+                    
+                    <div className="mt-auto pt-6">
+                      <Button 
+                        onClick={() => handleNavigateToSection("contact")}
+                        className="w-full bg-accent hover:bg-accent/90"
+                      >
+                        Get in Touch
+                      </Button>
+                    </div>
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
