@@ -90,7 +90,18 @@ const Contact = () => {
                   </Button>
                 </div>
 
-                
+                <div className="flex gap-4 justify-center">
+                  <Button variant="outline" size="icon" asChild className="border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground/10">
+                    <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => trackEvent('click', 'Contact', 'LinkedIn')}>
+                      <Linkedin className="w-5 h-5 text-primary-foreground" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="icon" asChild className="border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground/10">
+                    <a href="https://github.com/NexuFed-AI" target="_blank" rel="noopener noreferrer" aria-label="GitHub" onClick={() => trackEvent('click', 'Contact', 'GitHub')}>
+                      <Github className="w-5 h-5 text-primary-foreground" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </Card>
