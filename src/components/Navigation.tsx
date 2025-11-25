@@ -19,6 +19,17 @@ const Navigation = () => {
     }
   };
 
+  const handleAboutClick = () => {
+    if (location.pathname === "/about") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/about");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    }
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -81,12 +92,12 @@ const Navigation = () => {
             >
               Benefits
             </button>
-            <Link 
-              to="/about"
+            <button 
+              onClick={handleAboutClick}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
             >
               About
-            </Link>
+            </button>
             <Link 
               to="/careers"
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
