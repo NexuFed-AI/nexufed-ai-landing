@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
 
               <h3 className="text-xl font-semibold mb-3">Further information:</h3>
               <p className="leading-relaxed">
-                Data processing takes place exclusively within the European Union or the European Economic Area. IONOS takes extensive technical and organizational measures (TOMs) in accordance with Art. 32 GDPR, including access protection, encryption, backup management and access restriction.
+                Data processing takes place exclusively within the European Union or the European Economic Area. Vercel takes extensive technical and organizational measures (TOMs) in accordance with Art. 32 GDPR, including access protection, encryption, backup management and access restriction.
               </p>
             </section>
 
