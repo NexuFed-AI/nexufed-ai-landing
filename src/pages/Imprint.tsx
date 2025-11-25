@@ -24,9 +24,10 @@ const Imprint = () => {
               </h2>
               <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI.</p>
               <p className="leading-relaxed mb-4">NexuFed AI – René Glitza und Luca Becker GbR
-Hans-Dobbertin-Str. 8
-c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)
-44803 Bochum, Germany<strong>Project name:</strong> NexuFed AI<br />
+Hans-Dobbertin-Str. 8 c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS) 44803 Bochum, GermanyProject name: NexuFed AI
+Ruhr-Universität Bochum
+Universitätsstraße 150
+44801 Bochum<strong>Project name:</strong> NexuFed AI<br />
                 Ruhr-Universität Bochum<br />
                 Universitätsstraße 150<br />
                 44801 Bochum
