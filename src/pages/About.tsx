@@ -2,6 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Shield, Lock, Zap, Users, Award, Target } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import founderReneImage from "@/assets/founder-rene.jpg";
+import founderLucaImage from "@/assets/founder-luca.jpg";
 
 const About = () => {
   const values = [
@@ -41,12 +43,14 @@ const About = () => {
     {
       name: "René Glitza",
       role: "CEO & CTO",
-      bio: "Expert in applied AI, industrial analytics, and data-driven monitoring. René leads the technical vision and product development, bringing deep experience in machine learning strategy and real-world deployment of intelligent monitoring systems."
+      bio: "Expert in applied AI, industrial analytics, and data-driven monitoring. René leads the technical vision and product development, bringing deep experience in machine learning strategy and real-world deployment of intelligent monitoring systems.",
+      image: founderReneImage
     },
     {
       name: "Luca Becker",
       role: "CAIO (Chief AI Officer)",
-      bio: "Specialist in distributed AI, federated learning, and privacy-preserving machine learning. Luca drives the AI research and development, with extensive expertise in large-scale audio-visual systems and decentralized learning architectures."
+      bio: "Specialist in distributed AI, federated learning, and privacy-preserving machine learning. Luca drives the AI research and development, with extensive expertise in large-scale audio-visual systems and decentralized learning architectures.",
+      image: founderLucaImage
     }
   ];
 
@@ -156,12 +160,13 @@ const About = () => {
               {founders.map((founder, index) => (
                 <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    {/* Profile picture placeholder */}
-                    <div className="w-32 h-32 rounded-full bg-muted/50 border-2 border-dashed border-muted-foreground/30 flex items-center justify-center mb-4 mx-auto overflow-hidden">
-                      <div className="text-center">
-                        <Users className="h-12 w-12 text-muted-foreground/40 mx-auto mb-2" />
-                        <span className="text-xs text-muted-foreground/60">Photo</span>
-                      </div>
+                    {/* Profile picture */}
+                    <div className="w-32 h-32 rounded-full mb-4 mx-auto overflow-hidden border-2 border-primary/20">
+                      <img 
+                        src={founder.image} 
+                        alt={`${founder.name} - ${founder.role}`}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <CardTitle className="text-2xl text-center">{founder.name}</CardTitle>
                     <CardDescription className="text-center text-accent font-semibold">
