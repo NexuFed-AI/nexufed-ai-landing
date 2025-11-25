@@ -3,7 +3,7 @@ import logo from "@/assets/logo.png";
 const Footer = () => {
   return <footer className="bg-background border-t border-primary/20 py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <img alt="NexuFed AI" className="h-12 mb-4" src="/lovable-uploads/7025a1c1-ca50-4929-af21-c5cc852a3286.png" />
             <p className="text-sm text-muted-foreground">
@@ -34,6 +34,22 @@ const Footer = () => {
               })} className="text-foreground hover:text-primary transition-colors">
                   Contact
                 </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-bold mb-4 text-primary">Legal</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="/imprint" className="text-foreground hover:text-primary transition-colors">
+                  Impressum
+                </a>
+              </li>
+              <li>
+                <a href="/privacy-policy" className="text-foreground hover:text-primary transition-colors">
+                  Datenschutzerklärung
+                </a>
               </li>
             </ul>
           </div>
