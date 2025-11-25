@@ -108,7 +108,7 @@ const Contact = () => {
                     className="w-full border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
                     asChild
                   >
-                    <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer">
+                    <a href="https://calendar.app.google/3nbWmAa28nR9ymfF7" target="_blank" rel="noopener noreferrer">
                       <Calendar className="mr-2 w-4 h-4" />
                       Schedule Meeting
                     </a>
