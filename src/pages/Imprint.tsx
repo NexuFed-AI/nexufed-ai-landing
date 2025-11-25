@@ -46,15 +46,16 @@ const Imprint = () => {
               <h2 className="text-2xl font-bold mb-4 text-primary">
                 Information according to §5 Digital Services Act (DDG)
               </h2>
-              <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI. The project is based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center. Ruhr University Bochum is not the operator of this website and does not provide funding for the project.</p>
+              <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI.</p>
               <p className="leading-relaxed mb-4">
                 <strong>Project name:</strong> NexuFed AI<br />
                 Ruhr-Universität Bochum<br />
                 Universitätsstraße 150<br />
                 44801 Bochum
               </p>
-              <p className="leading-relaxed mb-4">
-                <strong>Authorized representative and responsible for the project:</strong><br />
+              <p className="leading-relaxed mb-4">Authorized representative and responsible for the project:
+René Glitza
+Luca Becker<strong>Authorized representative and responsible for the project:</strong><br />
                 René Glitza
               </p>
               <p className="leading-relaxed">
@@ -67,7 +68,9 @@ const Imprint = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">Project Status</h2>
-              <p className="leading-relaxed">NexuFed AI is a research-based start-up project based at the Ruhr University Bochum. It is currently not an independent legal entity.</p>
+              <p className="leading-relaxed">NexuFed AI is a research-based start-up project based at the Ruhr University Bochum. It is currently not an independent legal entity.
+
+NexuFed AI is a research-based start-up project based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center. Ruhr University Bochum is not the operator of this website and does not provide funding for the project.</p>
             </section>
 
             <section>
