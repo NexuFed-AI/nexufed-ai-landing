@@ -13,7 +13,7 @@ const Footer = () => {
               src="/lovable-uploads/7025a1c1-ca50-4929-af21-c5cc852a3286.png"
             />
             <p className="text-sm text-muted-foreground">
-              Privacy-preserving condition monitoring with federated learning.
+              Enabling condition monitoring where data cannot be shared.
             </p>
           </div>
 
