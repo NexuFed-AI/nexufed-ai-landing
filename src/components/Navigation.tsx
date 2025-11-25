@@ -36,20 +36,22 @@ const Navigation = () => {
                 >
                   Benefits
                 </button>
-                <button 
-                  onClick={() => scrollToSection("contact")}
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-                >
-                  Contact
-                </button>
               </>
             ) : (
-              <Link 
-                to="/"
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-              >
-                Home
-              </Link>
+              <>
+                <Link 
+                  to="/#technology"
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  Technology
+                </Link>
+                <Link 
+                  to="/#benefits"
+                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  Benefits
+                </Link>
+              </>
             )}
             <Link 
               to="/about"
