@@ -79,7 +79,12 @@ const Contact = () => {
                     </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    <a href="https://github.com/NexuFed" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a
+                      href="https://github.com/NexuFed-AI"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                    >
                       <Github className="w-5 h-5" />
                     </a>
                   </Button>
