@@ -18,32 +18,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4 text-primary">Quick Links</h3>
+            <h3 className="font-bold mb-4 text-primary">Links</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <button
-                  onClick={() =>
-                    document.getElementById("technology")?.scrollIntoView({
-                      behavior: "smooth",
-                    })
-                  }
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Technology
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() =>
-                    document.getElementById("benefits")?.scrollIntoView({
-                      behavior: "smooth",
-                    })
-                  }
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Benefits
-                </button>
-              </li>
               <li>
                 <button
                   onClick={() =>
@@ -56,12 +32,6 @@ const Footer = () => {
                   Contact
                 </button>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-4 text-primary">Legal</h3>
-            <ul className="space-y-2 text-sm">
               <li>
                 <a href="/imprint" className="text-foreground hover:text-primary transition-colors">
                   Imprint
