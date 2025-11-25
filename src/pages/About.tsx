@@ -156,9 +156,12 @@ const About = () => {
               {founders.map((founder, index) => (
                 <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    {/* Placeholder portrait with initials */}
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-3xl font-bold text-primary-foreground mb-4 mx-auto">
-                      {founder.name.split(' ').map(n => n[0]).join('')}
+                    {/* Profile picture placeholder */}
+                    <div className="w-32 h-32 rounded-full bg-muted/50 border-2 border-dashed border-muted-foreground/30 flex items-center justify-center mb-4 mx-auto overflow-hidden">
+                      <div className="text-center">
+                        <Users className="h-12 w-12 text-muted-foreground/40 mx-auto mb-2" />
+                        <span className="text-xs text-muted-foreground/60">Photo</span>
+                      </div>
                     </div>
                     <CardTitle className="text-2xl text-center">{founder.name}</CardTitle>
                     <CardDescription className="text-center text-accent font-semibold">
