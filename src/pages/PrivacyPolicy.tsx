@@ -78,7 +78,7 @@ const PrivacyPolicy = () => {
 
               <h3 className="text-xl font-semibold mb-3">Storage periods (log files):</h3>
               <p className="leading-relaxed mb-4">
-                The log files on the IONOS web servers contain
+                The log files on the Vercel web servers contain
               </p>
               <ul className="list-disc list-inside leading-relaxed mb-4 space-y-1">
                 <li>IP address of the visitor</li>
