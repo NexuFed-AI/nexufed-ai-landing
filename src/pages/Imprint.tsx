@@ -13,12 +13,7 @@ const Imprint = () => {
 
           <div className="space-y-8 text-foreground">
             <section>
-              <p className="leading-relaxed mb-4">
-                <strong>NexuFed AI – René Glitza und Luca Becker GbR</strong><br />
-                Hans-Dobbertin-Str. 8<br />
-                c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)<br />
-                44803 Bochum, Germany
-              </p>
+              
               
               
             </section>
@@ -28,15 +23,15 @@ const Imprint = () => {
                 Information according to §5 Digital Services Act (DDG)
               </h2>
               <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI.</p>
-              <p className="leading-relaxed mb-4">
-                <strong>Project name:</strong> NexuFed AI<br />
+              <p className="leading-relaxed mb-4">NexuFed AI – René Glitza und Luca Becker GbR
+Hans-Dobbertin-Str. 8
+c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)
+44803 Bochum, Germany<strong>Project name:</strong> NexuFed AI<br />
                 Ruhr-Universität Bochum<br />
                 Universitätsstraße 150<br />
                 44801 Bochum
               </p>
-              <p className="leading-relaxed mb-4">
-
-Authorized representative and responsible for the project:
+              <p className="leading-relaxed mb-4">Authorized representative and responsible for the project:
 René Glitza
 Luca Becker<strong>Authorized representative and responsible for the project:</strong><br />
                 René Glitza
@@ -48,8 +43,14 @@ Luca Becker<strong>Authorized representative and responsible for the project:</s
                 Website: www.nexufed.ai
               </p>
               
-              <p className="leading-relaxed">
-                <strong>Post Address:</strong><br />
+              <p className="leading-relaxed">Postal address (service address):
+René Glitza
+c/o Ruhr-Universität Bochum
+Institut für Kommunikationsakustik
+Gebäude ID / Fachnr. 36
+Universitätsstr. 150
+44801 Bochum
+Germany<strong>Postal address (service address):</strong><br />
                 René Glitza<br />
                 c/o Ruhr-Universität Bochum<br />
                 Institut für Kommunikationsakustik<br />
@@ -61,9 +62,12 @@ Luca Becker<strong>Authorized representative and responsible for the project:</s
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">Project Status</h2>
-              <p className="leading-relaxed">NexuFed AI is a research-based start-up project based at the Ruhr University Bochum. It is currently not an independent legal entity.
+              <p className="leading-relaxed">NexuFed AI is a research-based start-up project based at the Ruhr University Bochum. It is currently not an independent legal entity. NexuFed AI is a research-based start-up project based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center. Ruhr University Bochum is not the operator of this website and does not provide funding for the project.
 
-NexuFed AI is a research-based start-up project based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center. Ruhr University Bochum is not the operator of this website and does not provide funding for the project.</p>
+
+NexuFed AI is a research-based start-up project operated by NexuFed AI – René Glitza und Luca Becker GbR. 
+The project is based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center. 
+Ruhr University Bochum is not the operator of this website and does not provide funding for the project.</p>
             </section>
 
             <section>
