@@ -3,7 +3,7 @@ import { Shield, Lock, Zap, Users, Award, Target } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import founderReneImage from "@/assets/founder-rene.jpg";
-import founderLucaImage from "@/assets/founder-luca.jpg";
+import founderLucaImage from "@/assets/founder-luca.png";
 
 const About = () => {
   const values = [
