@@ -116,31 +116,11 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-primary">
-                6. Embedded content from third-party providers
-              </h2>
-              <p className="leading-relaxed mb-4">
-                Content from third-party providers is embedded on our website in order to offer you an enhanced user experience. This applies in particular to
-              </p>
-              
-              <ul className="list-none space-y-4 mb-4">
-                <li>
-                  <strong>YouTube:</strong> A video hosted on the YouTube platform (a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) is embedded on our homepage. To protect your data, we use a so-called "two-click solution" or initially block the content via our cookie consent tool (Complianz). The video will only be loaded if you consent to the use of non-essential cookies. This may result in the transfer of personal data (e.g. your IP address) to Google servers. Some of these are also located in the USA. In this case, the data transfer is based on the standard contractual clauses of the EU Commission in accordance with Art. 46 GDPR.
-                </li>
-                <li>
-                  <strong>LinkedIn:</strong> Our footer contains the LinkedIn logo, which links to our company page on LinkedIn. LinkedIn is a service of LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Ireland. If you click on the logo or link, you will leave our website and be redirected to LinkedIn. LinkedIn's privacy policy applies there. You can find information on data processing by LinkedIn at: <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://www.linkedin.com/legal/privacy-policy</a>
-                </li>
-              </ul>
-              
-              <p className="leading-relaxed">
-                Please note that the use of these third-party services may result in further data processing over which we have no control.
-              </p>
-            </section>
+            
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                7. Cookies and similar technologies
+                6. Cookies and similar technologies
               </h2>
               <p className="leading-relaxed mb-4">
                 Our website uses cookies and similar technologies to provide certain functions and improve the user experience. They are used in accordance with the General Data Protection Regulation (GDPR) and the Telecommunications Digital Services Data Protection Act (TDDDG).
@@ -152,7 +132,7 @@ const PrivacyPolicy = () => {
                 This applies in particular to
               </p>
               <ul className="list-disc list-inside leading-relaxed mb-4 space-y-1">
-                <li><strong>YouTube:</strong> The embedded video on the homepage will only be loaded after your consent (see point 5).</li>
+                
                 <li><strong>External links:</strong> Logos and links to platforms such as LinkedIn and Github lead to external sites. These platforms may – after your active use – set cookies and process data.</li>
               </ul>
 
@@ -169,7 +149,7 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                8. Rights
+                7. Rights
               </h2>
               <p className="leading-relaxed mb-4">
                 As a data subject, you have the following rights under the GDPR
@@ -189,7 +169,7 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                9. Revocation of your consent to data processing
+                8. Revocation of your consent to data processing
               </h2>
               <p className="leading-relaxed mb-4">
                 If we process personal data on the basis of your consent (Art. 6 para. 1 lit. a GDPR), you can revoke this at any time. The revocation only applies to the future and does not affect the legality of the processing carried out up to that point.
@@ -201,7 +181,7 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                10. Right to lodge a complaint with the supervisory authority
+                9. Right to lodge a complaint with the supervisory authority
               </h2>
               <p className="leading-relaxed">
                 If you believe that the processing of your personal data violates applicable data protection law, you have the right to lodge a complaint with a data protection supervisory authority in accordance with Art. 77 GDPR.
@@ -210,7 +190,7 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                11. Data security
+                10. Data security
               </h2>
               <p className="leading-relaxed mb-4">
                 We use technical and organizational measures to protect your data from loss, misuse or unauthorized access in the best possible way. These measures are regularly reviewed and adapted to the state of the art.
@@ -222,7 +202,7 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                12. Amendment of this privacy policy
+                11. Amendment of this privacy policy
               </h2>
               <p className="leading-relaxed mb-4">
                 We reserve the right to amend this privacy policy if this is legally or technically necessary.
