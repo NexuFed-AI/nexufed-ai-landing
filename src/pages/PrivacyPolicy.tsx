@@ -134,12 +134,29 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                5. Cookies
+                5. Cookies und Analyse-Tools
               </h2>
               <p className="leading-relaxed mb-4">
-                Unsere Website verwendet derzeit <strong>keine Cookies</strong>. Sollten wir in
-                Zukunft Cookies einsetzen, werden wir Sie darüber entsprechend informieren und Ihre
-                Einwilligung einholen, sofern dies gesetzlich erforderlich ist.
+                Unsere Website verwendet derzeit <strong>keine Cookies</strong> oder Analyse-Tools.
+              </p>
+              <p className="leading-relaxed mb-4">
+                Wir planen jedoch, in naher Zukunft Analyse-Tools zur Verbesserung unseres
+                Web-Angebots einzusetzen. Vor der Aktivierung solcher Tools werden wir Sie über ein
+                Cookie-Banner informieren und Ihre Einwilligung einholen, sofern dies gesetzlich
+                erforderlich ist (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG).
+              </p>
+              <p className="leading-relaxed">
+                Durch Analyse-Tools können folgende Daten erfasst werden:
+              </p>
+              <ul className="list-disc list-inside leading-relaxed mb-4 space-y-1">
+                <li>Besuchte Seiten und Verweildauer</li>
+                <li>Herkunft der Besucher (Referrer)</li>
+                <li>Geografische Herkunft</li>
+                <li>Geräte- und Browserinformationen</li>
+              </ul>
+              <p className="leading-relaxed">
+                Diese Daten helfen uns, die Nutzererfahrung zu verbessern und unsere Website zu
+                optimieren. Sie können Ihre Einwilligung jederzeit widerrufen.
               </p>
             </section>
 

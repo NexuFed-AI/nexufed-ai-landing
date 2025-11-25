@@ -17,7 +17,6 @@ const Imprint = () => {
                 Angaben gemäß § 5 TMG
               </h2>
               <p className="leading-relaxed">
-                NexuFed AI<br />
                 René Glitza<br />
                 E2/12, ZESS<br />
                 Hans-Dobbertin-Str. 8<br />
