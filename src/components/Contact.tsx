@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Calendar, Linkedin, Github } from "lucide-react";
+import { trackEvent } from "@/hooks/useAnalytics";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-muted/30">
@@ -74,6 +76,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
+                      onClick={() => trackEvent('click', 'Contact', 'LinkedIn')}
                     >
                       <Linkedin className="w-5 h-5" />
                     </a>
@@ -84,6 +87,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="GitHub"
+                      onClick={() => trackEvent('click', 'Contact', 'GitHub')}
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -98,7 +102,10 @@ const Contact = () => {
 
                 <div className="space-y-4">
                   <Button className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
-                    <a href="mailto:rene.glitza@nexufed.ai">
+                    <a 
+                      href="mailto:rene.glitza@nexufed.ai"
+                      onClick={() => trackEvent('click', 'Contact', 'Send Email')}
+                    >
                       <Mail className="mr-2 w-4 h-4" />
                       Send Email
                     </a>
@@ -108,7 +115,12 @@ const Contact = () => {
                     className="w-full border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
                     asChild
                   >
-                    <a href="https://calendar.app.google/3nbWmAa28nR9ymfF7" target="_blank" rel="noopener noreferrer">
+                    <a 
+                      href="https://calendar.app.google/3nbWmAa28nR9ymfF7" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => trackEvent('click', 'Contact', 'Schedule Meeting')}
+                    >
                       <Calendar className="mr-2 w-4 h-4" />
                       Schedule Meeting
                     </a>
