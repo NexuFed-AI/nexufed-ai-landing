@@ -1,9 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Calendar, Linkedin, Github } from "lucide-react";
+import { trackEvent } from "@/hooks/useAnalytics";
 const Contact = () => {
-  return (
-    <section id="contact" className="py-24 bg-muted/30">
+  return <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -27,10 +27,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground mb-1">Email</div>
-                      <a
-                        className="text-foreground hover:text-accent transition-colors font-medium"
-                        href="mailto:info@nexufed.ai"
-                      >
+                      <a className="text-foreground hover:text-accent transition-colors font-medium" href="mailto:info@nexufed.ai">
                         info@nexufed.ai
                       </a>
                     </div>
@@ -42,10 +39,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground mb-1">Phone</div>
-                      <a
-                        href="tel:+492343218591"
-                        className="text-foreground hover:text-accent transition-colors font-medium"
-                      >
+                      <a href="tel:+492343218591" className="text-foreground hover:text-accent transition-colors font-medium">
                         +49 234 32 18591
                       </a>
                     </div>
@@ -69,61 +63,50 @@ const Contact = () => {
 
                 <div className="flex gap-4 mt-8">
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    <a
-                      href="https://linkedin.com/company/nexufed"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                    >
+                    <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => trackEvent('click', 'Contact', 'LinkedIn')}>
                       <Linkedin className="w-5 h-5" />
                     </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    <a
-                      href="https://github.com/NexuFed-AI"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="GitHub"
-                    >
+                    <a href="https://github.com/NexuFed-AI" target="_blank" rel="noopener noreferrer" aria-label="GitHub" onClick={() => trackEvent('click', 'Contact', 'GitHub')}>
                       <Github className="w-5 h-5" />
                     </a>
                   </Button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground">
-                <h3 className="text-2xl font-bold mb-4">René Glitza</h3>
-                <p className="text-lg mb-6 opacity-90">Founder & CTO — NexuFed AI</p>
-                <p className="mb-6 opacity-90">Applied Data Science & Federated Learning</p>
+              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
+                  <p className="text-lg opacity-90">We're here to answer your questions.</p>
+                </div>
 
-                <div className="space-y-4">
-                  <Button className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
-                    <a href="mailto:rene.glitza@nexufed.ai">
+                <div className="flex justify-center my-6">
+                  <Button className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8" asChild>
+                    <a onClick={() => trackEvent('click', 'Contact', 'Send Email')} href="mailto:info@nexufed.ai">
                       <Mail className="mr-2 w-4 h-4" />
                       Send Email
                     </a>
                   </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
-                    asChild
-                  >
-                    <a href="https://calendar.app.google/3nbWmAa28nR9ymfF7" target="_blank" rel="noopener noreferrer">
-                      <Calendar className="mr-2 w-4 h-4" />
-                      Schedule Meeting
+                </div>
+
+                <div className="flex gap-4 justify-center">
+                  <Button variant="outline" size="icon" asChild className="border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground/10">
+                    <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => trackEvent('click', 'Contact', 'LinkedIn')}>
+                      <Linkedin className="w-5 h-5 text-primary-foreground" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="icon" asChild className="border-2 border-primary-foreground bg-transparent hover:bg-primary-foreground/10">
+                    <a href="https://github.com/NexuFed-AI" target="_blank" rel="noopener noreferrer" aria-label="GitHub" onClick={() => trackEvent('click', 'Contact', 'GitHub')}>
+                      <Github className="w-5 h-5 text-primary-foreground" />
                     </a>
                   </Button>
                 </div>
-
-                <p className="text-sm mt-6 opacity-75">
-                  Note: NexuFed AI is a research/startup project (not an incorporated company).
-                </p>
               </div>
             </div>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Contact;
