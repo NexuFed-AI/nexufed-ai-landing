@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <img alt="NexuFed AI" className="h-12 mb-4" src="/lovable-uploads/7025a1c1-ca50-4929-af21-c5cc852a3286.png" />
+            <img alt="NexuFed AI" className="h-12 mb-4 w-auto object-contain" src="/lovable-uploads/7025a1c1-ca50-4929-af21-c5cc852a3286.png" />
             <p className="text-sm text-muted-foreground">
               Privacy-preserving condition monitoring with federated learning.
             </p>
