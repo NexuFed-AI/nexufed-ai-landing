@@ -147,9 +147,7 @@ const PrivacyPolicy = () => {
               </p>
 
               <h3 className="text-xl font-semibold mb-3">a) Consent-based use with Complianz</h3>
-              <p className="leading-relaxed mb-2">
-                When you visit our website for the first time, a cookie banner (provided by Complianz | GDPR/CCPA Cookie Consent) appears, informing you about the use of cookies. Cookies that are not technically necessary are only set if you expressly consent to this.
-              </p>
+              <p className="leading-relaxed mb-2">When you visit our website for the first time, a cookie banner appears, informing you about the use of cookies. Cookies that are not technically necessary are only set if you expressly consent to this.</p>
               <p className="leading-relaxed mb-4">
                 This applies in particular to
               </p>
