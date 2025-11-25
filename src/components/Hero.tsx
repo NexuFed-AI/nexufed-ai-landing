@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Network } from "lucide-react";
+import { ArrowRight, Network, Lock } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -28,58 +28,78 @@ const Hero = () => {
             </linearGradient>
           </defs>
           
-          {/* Connection lines - mix of solid and dashed (encrypted) lines */}
+          {/* Connection lines - all solid to show secure connections */}
           <line x1="15%" y1="20%" x2="35%" y2="30%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" />
-          <line x1="35%" y1="30%" x2="60%" y2="25%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" strokeDasharray="4,3" className="animate-pulse-line" style={{ animationDelay: "1s" }} />
+          <line x1="35%" y1="30%" x2="60%" y2="25%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "1s" }} />
           <line x1="60%" y1="25%" x2="80%" y2="35%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "2s" }} />
-          <line x1="15%" y1="20%" x2="20%" y2="50%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" strokeDasharray="4,3" className="animate-pulse-line" style={{ animationDelay: "0.5s" }} />
+          <line x1="15%" y1="20%" x2="20%" y2="50%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "0.5s" }} />
           <line x1="20%" y1="50%" x2="45%" y2="60%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "1.5s" }} />
           <line x1="45%" y1="60%" x2="70%" y2="55%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "2.5s" }} />
-          <line x1="70%" y1="55%" x2="85%" y2="65%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" strokeDasharray="4,3" className="animate-pulse-line" style={{ animationDelay: "3s" }} />
+          <line x1="70%" y1="55%" x2="85%" y2="65%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "3s" }} />
           <line x1="35%" y1="30%" x2="45%" y2="60%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "0.8s" }} />
-          <line x1="60%" y1="25%" x2="70%" y2="55%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" strokeDasharray="4,3" className="animate-pulse-line" style={{ animationDelay: "1.8s" }} />
+          <line x1="60%" y1="25%" x2="70%" y2="55%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "1.8s" }} />
           <line x1="20%" y1="50%" x2="35%" y2="75%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "2.2s" }} />
           <line x1="35%" y1="75%" x2="65%" y2="80%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "2.8s" }} />
-          <line x1="65%" y1="80%" x2="85%" y2="65%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" strokeDasharray="4,3" className="animate-pulse-line" style={{ animationDelay: "1.2s" }} />
+          <line x1="65%" y1="80%" x2="85%" y2="65%" stroke="url(#lineGradientSecure)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "1.2s" }} />
           <line x1="45%" y1="60%" x2="65%" y2="80%" stroke="url(#lineGradient)" strokeWidth="1.5" className="animate-pulse-line" style={{ animationDelay: "3.5s" }} />
         </svg>
         
-        {/* Network nodes with protective halos - distributed sensor points */}
-        {/* Node with halo - protected */}
+        {/* Network nodes with lock icons - distributed sensor points with data privacy */}
+        {/* Node with halo and lock - protected */}
         <div className="absolute top-[20%] left-[15%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" />
           <div className="absolute inset-0 w-8 h-8 -translate-x-[12px] -translate-y-[12px] bg-primary/10 rounded-full animate-pulse-halo" />
           <div className="w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" />
         </div>
         
-        <div className="absolute top-[30%] left-[35%] w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-[30%] left-[35%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "1s" }} />
+          <div className="w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1s" }} />
+        </div>
         
-        {/* Node with halo - protected */}
+        {/* Node with halo and lock - protected */}
         <div className="absolute top-[25%] left-[60%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "2s" }} />
           <div className="absolute inset-0 w-8 h-8 -translate-x-[12px] -translate-y-[12px] bg-primary/10 rounded-full animate-pulse-halo" style={{ animationDelay: "2s" }} />
           <div className="w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "2s" }} />
         </div>
         
-        <div className="absolute top-[35%] left-[80%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "0.5s" }} />
+        <div className="absolute top-[35%] left-[80%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "0.5s" }} />
+          <div className="w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "0.5s" }} />
+        </div>
         
-        {/* Node with halo - protected */}
+        {/* Node with halo and lock - protected */}
         <div className="absolute top-[50%] left-[20%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "1.5s" }} />
           <div className="absolute inset-0 w-9 h-9 -translate-x-[13px] -translate-y-[13px] bg-primary/10 rounded-full animate-pulse-halo" style={{ animationDelay: "1.5s" }} />
           <div className="w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1.5s" }} />
         </div>
         
-        <div className="absolute top-[60%] left-[45%] w-3 h-3 bg-primary rounded-full animate-pulse-node shadow-[0_0_15px_hsl(var(--primary))]" style={{ animationDelay: "2.5s" }} />
+        <div className="absolute top-[60%] left-[45%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "2.5s" }} />
+          <div className="w-3 h-3 bg-primary rounded-full animate-pulse-node shadow-[0_0_15px_hsl(var(--primary))]" style={{ animationDelay: "2.5s" }} />
+        </div>
         
-        {/* Node with halo - protected */}
+        {/* Node with halo and lock - protected */}
         <div className="absolute top-[55%] left-[70%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "3s" }} />
           <div className="absolute inset-0 w-8 h-8 -translate-x-[12px] -translate-y-[12px] bg-primary/10 rounded-full animate-pulse-halo" style={{ animationDelay: "3s" }} />
           <div className="w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "3s" }} />
         </div>
         
-        <div className="absolute top-[65%] left-[85%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "0.8s" }} />
-        <div className="absolute top-[75%] left-[35%] w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "2.2s" }} />
+        <div className="absolute top-[65%] left-[85%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "0.8s" }} />
+          <div className="w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "0.8s" }} />
+        </div>
+        <div className="absolute top-[75%] left-[35%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "2.2s" }} />
+          <div className="w-2 h-2 bg-primary rounded-full animate-pulse-node shadow-[0_0_10px_hsl(var(--primary))]" style={{ animationDelay: "2.2s" }} />
+        </div>
         
-        {/* Node with halo - protected */}
+        {/* Node with halo and lock - protected */}
         <div className="absolute top-[80%] left-[65%]">
+          <Lock className="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 text-primary/20" style={{ animationDelay: "1.8s" }} />
           <div className="absolute inset-0 w-9 h-9 -translate-x-[13px] -translate-y-[13px] bg-primary/10 rounded-full animate-pulse-halo" style={{ animationDelay: "1.8s" }} />
           <div className="w-2.5 h-2.5 bg-primary rounded-full animate-pulse-node shadow-[0_0_12px_hsl(var(--primary))]" style={{ animationDelay: "1.8s" }} />
         </div>
