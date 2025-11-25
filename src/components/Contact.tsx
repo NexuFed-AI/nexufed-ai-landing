@@ -90,9 +90,7 @@ const Contact = () => {
                   </Button>
                 </div>
 
-                <p className="text-sm opacity-75">
-                  Note: NexuFed AI is a research/startup project (not an incorporated company).
-                </p>
+                
               </div>
             </div>
           </Card>
