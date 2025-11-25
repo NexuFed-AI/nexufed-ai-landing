@@ -46,7 +46,9 @@ const Imprint = () => {
                 Universitätsstraße 150<br />
                 44801 Bochum
               </p>
-              <p className="leading-relaxed mb-4">Authorized representative and responsible for the project:
+              <p className="leading-relaxed mb-4">
+
+Authorized representative and responsible for the project:
 René Glitza
 Luca Becker<strong>Authorized representative and responsible for the project:</strong><br />
                 René Glitza
