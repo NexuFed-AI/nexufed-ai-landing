@@ -69,13 +69,9 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">Project Status</h2>
               <p className="leading-relaxed">
-                NexuFed AI is a research-based start-up project based at the Ruhr University Bochum. It is currently not
-                an independent legal entity. NexuFed AI is a research-based start-up project based at Ruhr University
-                Bochum and supported by the WORLDFACTORY Start-up Center. Ruhr University Bochum is not the operator of
-                this website and does not provide funding for the project. NexuFed AI is a research-based start-up
-                project operated by NexuFed AI – René Glitza und Luca Becker GbR.  The project is based at Ruhr
-                University Bochum and supported by the WORLDFACTORY Start-up Center.  Ruhr University Bochum is not the
-                operator of this website and does not provide funding for the project.
+                NexuFed AI is a research-based start-up project operated by NexuFed AI – René Glitza und Luca Becker
+                GbR. The project is based at Ruhr University Bochum and supported by the WORLDFACTORY Start-up Center.
+                Ruhr University Bochum is not the operator of this website and does not provide funding for the project.
               </p>
             </section>
 
