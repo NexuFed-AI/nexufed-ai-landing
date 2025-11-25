@@ -24,14 +24,10 @@ const PrivacyPolicy = () => {
                 Responsible for the data processing on this website is
               </p>
               <p className="leading-relaxed mb-1">
-                Nils Surkamp
+                René Glitza and Luca Becker    
               </p>
-              <p className="leading-relaxed mb-1">
-                c/o Ruhr-Universität Bochum
-              </p>
-              <p className="leading-relaxed mb-1">
-                Universitätsstraße 150, 44801 Bochum
-              </p>
+              <p className="leading-relaxed mb-1">​Zentrum für das Engeneering Smarter Produkt-Service Systeme       </p>
+              <p className="leading-relaxed mb-1">Hans-Dobbertin-Str. 8, 44803 Bochum</p>
               <p className="leading-relaxed mb-1">
                 Fakultät ETIT / Lehrstuhl PTT
               </p>
