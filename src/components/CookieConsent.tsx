@@ -120,13 +120,13 @@ const CookieConsent = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
             <div className="flex-1">
               <h3 className="text-lg font-bold text-foreground mb-2">
-                Cookie-Einstellungen
+                Cookie Settings
               </h3>
               <p className="text-sm text-muted-foreground">
-                Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unsere Website zu optimieren. 
-                Sie können Ihre Präferenzen jederzeit anpassen. Weitere Informationen finden Sie in unserer{" "}
+                We use cookies to improve your experience and optimize our website. 
+                You can adjust your preferences at any time. For more information, please see our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
-                  Datenschutzerklärung
+                  Privacy Policy
                 </a>
                 .
               </p>
@@ -137,20 +137,20 @@ const CookieConsent = () => {
                 onClick={handleDeclineAll}
                 className="w-full sm:w-auto"
               >
-                Nur notwendige
+                Only Necessary
               </Button>
               <Button
                 variant="outline"
                 onClick={handleOpenSettings}
                 className="w-full sm:w-auto"
               >
-                Einstellungen
+                Settings
               </Button>
               <Button
                 onClick={handleAcceptAll}
                 className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                Alle akzeptieren
+                Accept All
               </Button>
             </div>
           </div>
@@ -161,9 +161,9 @@ const CookieConsent = () => {
       <Dialog open={showSettings} onOpenChange={setShowSettings}>
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle>Cookie-Einstellungen</DialogTitle>
+            <DialogTitle>Cookie Settings</DialogTitle>
             <DialogDescription>
-              Wählen Sie, welche Arten von Cookies Sie akzeptieren möchten. Sie können Ihre Einstellungen jederzeit ändern.
+              Choose which types of cookies you want to accept. You can change your settings at any time.
             </DialogDescription>
           </DialogHeader>
 
@@ -173,10 +173,10 @@ const CookieConsent = () => {
               <div className="flex items-center justify-between">
                 <div className="flex-1">
                   <Label htmlFor="necessary" className="text-base font-semibold">
-                    Notwendige Cookies
+                    Necessary Cookies
                   </Label>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden.
+                    These cookies are essential for the basic functions of the website and cannot be disabled.
                   </p>
                 </div>
                 <Switch
@@ -193,15 +193,15 @@ const CookieConsent = () => {
               <div className="flex items-center justify-between">
                 <div className="flex-1">
                   <Label htmlFor="analytics" className="text-base font-semibold cursor-pointer">
-                    Analyse-Cookies
+                    Analytics Cookies
                   </Label>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, 
-                    indem sie Informationen anonym sammeln und melden. Wir verwenden diese Daten, 
-                    um unsere Website zu verbessern.
+                    These cookies help us understand how visitors interact with our website 
+                    by collecting and reporting information anonymously. We use this data 
+                    to improve our website.
                   </p>
                   <p className="text-xs text-muted-foreground mt-2">
-                    Dienste: Google Analytics
+                    Services: Google Analytics
                   </p>
                 </div>
                 <Switch
@@ -220,12 +220,12 @@ const CookieConsent = () => {
               <div className="flex items-center justify-between">
                 <div className="flex-1">
                   <Label htmlFor="marketing" className="text-base font-semibold cursor-pointer">
-                    Marketing-Cookies
+                    Marketing Cookies
                   </Label>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Diese Cookies werden verwendet, um Besuchern auf Webseiten zu folgen und 
-                    relevante Werbung anzuzeigen. Wir verwenden derzeit keine Marketing-Cookies, 
-                    aber diese Option steht für zukünftige Funktionen zur Verfügung.
+                    These cookies are used to track visitors across websites and display 
+                    relevant advertising. We currently do not use marketing cookies, 
+                    but this option is available for future functionality.
                   </p>
                 </div>
                 <Switch
@@ -246,13 +246,13 @@ const CookieConsent = () => {
               onClick={() => setShowSettings(false)}
               className="flex-1"
             >
-              Abbrechen
+              Cancel
             </Button>
             <Button
               onClick={handleSavePreferences}
               className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              Einstellungen speichern
+              Save Settings
             </Button>
           </div>
         </DialogContent>

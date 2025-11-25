@@ -11,71 +11,52 @@ const PrivacyPolicy = () => {
       <main className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-primary">
-            Datenschutzerklärung
+            Privacy Policy
           </h1>
 
           <div className="space-y-8 text-foreground">
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                1. Datenschutz auf einen Blick
+                1. Data Protection at a Glance
               </h2>
-              <h3 className="text-xl font-semibold mb-3">Allgemeine Hinweise</h3>
+              <h3 className="text-xl font-semibold mb-3">General Information</h3>
               <p className="leading-relaxed mb-4">
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren
-                personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene
-                Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
-                Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem
-                Text aufgeführten Datenschutzerklärung.
+                The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally. For detailed information on data protection, please refer to our privacy policy listed below this text.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                2. Datenerfassung auf dieser Website
+                2. Data Collection on This Website
               </h2>
               <h3 className="text-xl font-semibold mb-3">
-                Wer ist verantwortlich für die Datenerfassung auf dieser Website?
+                Who is responsible for data collection on this website?
               </h3>
               <p className="leading-relaxed mb-4">
-                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen
-                Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
+                Data processing on this website is carried out by the website operator. You can find their contact details in the imprint of this website.
               </p>
 
-              <h3 className="text-xl font-semibold mb-3">Wie erfassen wir Ihre Daten?</h3>
+              <h3 className="text-xl font-semibold mb-3">How do we collect your data?</h3>
               <p className="leading-relaxed mb-4">
-                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei
-                kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+                Your data is collected in part by you providing it to us. This may be data you enter in a contact form, for example.
               </p>
               <p className="leading-relaxed mb-4">
-                Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website
-                durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B.
-                Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung
-                dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                Other data is collected automatically or with your consent when you visit the website by our IT systems. This is mainly technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter this website.
               </p>
 
-              <h3 className="text-xl font-semibold mb-3">Wofür nutzen wir Ihre Daten?</h3>
+              <h3 className="text-xl font-semibold mb-3">What do we use your data for?</h3>
               <p className="leading-relaxed mb-4">
-                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu
-                gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet
-                werden, sofern Sie entsprechende Tracking-Tools aktivieren.
+                Part of the data is collected to ensure error-free provision of the website. Other data may be used to analyze your user behavior if you activate corresponding tracking tools.
               </p>
 
               <h3 className="text-xl font-semibold mb-3">
-                Welche Rechte haben Sie bezüglich Ihrer Daten?
+                What rights do you have regarding your data?
               </h3>
               <p className="leading-relaxed mb-4">
-                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und
-                Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem
-                ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine
-                Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung
-                jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten
-                Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu
-                verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen
-                Aufsichtsbehörde zu.
+                You have the right at any time to receive information free of charge about the origin, recipient, and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. You also have the right, under certain circumstances, to request the restriction of the processing of your personal data. Furthermore, you have the right to lodge a complaint with the competent supervisory authority.
               </p>
               <p className="leading-relaxed">
-                Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an
-                uns wenden.
+                You can contact us at any time regarding this and other questions about data protection.
               </p>
             </section>
 
@@ -84,172 +65,116 @@ const PrivacyPolicy = () => {
                 3. Hosting
               </h2>
               <p className="leading-relaxed mb-4">
-                Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
+                We host the content of our website with the following provider:
               </p>
-              <h3 className="text-xl font-semibold mb-3">Externes Hosting</h3>
+              <h3 className="text-xl font-semibold mb-3">External Hosting</h3>
               <p className="leading-relaxed mb-4">
-                Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser
-                Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert.
-                Hierbei kann es sich v.a. um IP-Adressen, Kontaktanfragen, Meta- und
-                Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige
-                Daten, die über eine Website generiert werden, handeln.
+                This website is hosted externally. The personal data collected on this website is stored on the servers of the host(s). This may primarily include IP addresses, contact requests, meta and communication data, contract data, contact details, names, website accesses, and other data generated via a website.
               </p>
               <p className="leading-relaxed mb-4">
-                Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren
-                potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse
-                einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots
-                durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine
-                entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich
-                auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die
-                Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im
-                Endgerät des Nutzers (z.B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die
-                Einwilligung ist jederzeit widerrufbar.
+                External hosting is carried out for the purpose of contract fulfillment towards our potential and existing customers (Art. 6 para. 1 lit. b GDPR) and in the interest of secure, fast, and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f GDPR). If appropriate consent has been requested, processing is carried out exclusively on the basis of Art. 6 para. 1 lit. a GDPR and § 25 para. 1 TTDSG (German Telecommunications-Telemedia Data Protection Act), insofar as consent includes the storage of cookies or access to information in the user's end device (e.g., device fingerprinting) within the meaning of the TTDSG. Consent can be revoked at any time.
               </p>
               <p className="leading-relaxed">
-                Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies zur
-                Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug
-                auf diese Daten befolgen.
+                Our host(s) will only process your data to the extent necessary to fulfill their performance obligations and follow our instructions regarding this data.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                4. Allgemeine Hinweise und Pflichtinformationen
+                4. General Information and Mandatory Information
               </h2>
-              <h3 className="text-xl font-semibold mb-3">Datenschutz</h3>
+              <h3 className="text-xl font-semibold mb-3">Data Protection</h3>
               <p className="leading-relaxed mb-4">
-                Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
-                Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den
-                gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+                The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.
               </p>
               <p className="leading-relaxed mb-4">
-                Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben.
-                Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden
-                können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und
-                wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
+                When you use this website, various personal data is collected. Personal data is data with which you can be personally identified. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.
               </p>
               <p className="leading-relaxed">
-                Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der
-                Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz
-                der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+                We would like to point out that data transmission over the Internet (e.g., when communicating by email) can have security gaps. Complete protection of data from access by third parties is not possible.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                5. Cookies und Analyse-Tools
+                5. Cookies and Analysis Tools
               </h2>
               <p className="leading-relaxed mb-4">
-                Unsere Website verwendet derzeit <strong>keine Cookies</strong> oder Analyse-Tools.
+                Our website currently uses <strong>no cookies</strong> or analysis tools by default.
               </p>
               <p className="leading-relaxed mb-4">
-                Wir planen jedoch, in naher Zukunft Analyse-Tools zur Verbesserung unseres
-                Web-Angebots einzusetzen. Vor der Aktivierung solcher Tools werden wir Sie über ein
-                Cookie-Banner informieren und Ihre Einwilligung einholen, sofern dies gesetzlich
-                erforderlich ist (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG).
+                However, we plan to use analysis tools in the near future to improve our web offering. Before activating such tools, we will inform you via a cookie banner and obtain your consent if legally required (Art. 6 para. 1 lit. a GDPR and § 25 para. 1 TTDSG).
               </p>
               <p className="leading-relaxed">
-                Durch Analyse-Tools können folgende Daten erfasst werden:
+                Analysis tools may collect the following data:
               </p>
               <ul className="list-disc list-inside leading-relaxed mb-4 space-y-1">
-                <li>Besuchte Seiten und Verweildauer</li>
-                <li>Herkunft der Besucher (Referrer)</li>
-                <li>Geografische Herkunft</li>
-                <li>Geräte- und Browserinformationen</li>
+                <li>Pages visited and time spent</li>
+                <li>Origin of visitors (referrer)</li>
+                <li>Geographic origin</li>
+                <li>Device and browser information</li>
               </ul>
               <p className="leading-relaxed">
-                Diese Daten helfen uns, die Nutzererfahrung zu verbessern und unsere Website zu
-                optimieren. Sie können Ihre Einwilligung jederzeit widerrufen.
+                This data helps us improve the user experience and optimize our website. You can revoke your consent at any time.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                6. Server-Log-Dateien
+                6. Server Log Files
               </h2>
               <p className="leading-relaxed mb-4">
-                Der Provider der Seiten erhebt und speichert automatisch Informationen in so
-                genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies
-                sind:
+                The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:
               </p>
               <ul className="list-disc list-inside leading-relaxed mb-4 space-y-1">
-                <li>Browsertyp und Browserversion</li>
-                <li>verwendetes Betriebssystem</li>
+                <li>Browser type and version</li>
+                <li>Operating system used</li>
                 <li>Referrer URL</li>
-                <li>Hostname des zugreifenden Rechners</li>
-                <li>Uhrzeit der Serveranfrage</li>
-                <li>IP-Adresse</li>
+                <li>Hostname of the accessing computer</li>
+                <li>Time of the server request</li>
+                <li>IP address</li>
               </ul>
               <p className="leading-relaxed mb-4">
-                Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+                This data is not merged with other data sources.
               </p>
               <p className="leading-relaxed">
-                Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
-                Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien
-                Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files
-                erfasst werden.
+                This data is collected on the basis of Art. 6 para. 1 lit. f GDPR. The website operator has a legitimate interest in the technically error-free presentation and optimization of their website – for this purpose, server log files must be recorded.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                7. Kontaktformular
+                7. Contact Form
               </h2>
               <p className="leading-relaxed mb-4">
-                Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus
-                dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks
-                Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
-                Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                If you send us inquiries via the contact form, your details from the inquiry form, including the contact data you provide there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent.
               </p>
               <p className="leading-relaxed mb-4">
-                Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO,
-                sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur
-                Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen
-                beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven
-                Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf
-                Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die
-                Einwilligung ist jederzeit widerrufbar.
+                The processing of this data is based on Art. 6 para. 1 lit. b GDPR if your request is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, processing is based on our legitimate interest in the effective processing of inquiries sent to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; consent can be revoked at any time.
               </p>
               <p className="leading-relaxed">
-                Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns
-                zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck
-                für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer
-                Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen –
-                bleiben unberührt.
+                The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after completion of processing your request). Mandatory legal provisions – especially retention periods – remain unaffected.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                8. Anfrage per E-Mail, Telefon oder Telefax
+                8. Inquiry by Email, Phone, or Fax
               </h2>
               <p className="leading-relaxed mb-4">
-                Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage
-                inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum
-                Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese
-                Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                If you contact us by email, phone, or fax, your inquiry including all resulting personal data (name, inquiry) will be stored and processed by us for the purpose of handling your request. We do not pass on this data without your consent.
               </p>
               <p className="leading-relaxed mb-4">
-                Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO,
-                sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur
-                Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen
-                beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven
-                Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf
-                Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die
-                Einwilligung ist jederzeit widerrufbar.
+                The processing of this data is based on Art. 6 para. 1 lit. b GDPR if your request is related to the fulfillment of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, processing is based on our legitimate interest in the effective processing of inquiries sent to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if this has been requested; consent can be revoked at any time.
               </p>
               <p className="leading-relaxed">
-                Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis
-                Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder
-                der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung
-                Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche
-                Aufbewahrungsfristen – bleiben unberührt.
+                The data you send to us via contact requests will remain with us until you request us to delete it, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after completion of processing your request). Mandatory legal provisions – especially legal retention periods – remain unaffected.
               </p>
             </section>
 
             <section className="pt-8 border-t border-primary/20">
               <p className="text-sm text-muted-foreground">
-                Stand: Januar 2025
+                Last updated: January 2025
               </p>
             </section>
           </div>
