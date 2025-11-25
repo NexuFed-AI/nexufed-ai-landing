@@ -75,11 +75,13 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground">
-                <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
-                <p className="text-lg mb-6 opacity-90">We're here to answer your questions.</p>
+              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
+                  <p className="text-lg opacity-90">We're here to answer your questions.</p>
+                </div>
 
-                <div className="flex justify-center">
+                <div className="flex justify-center my-6">
                   <Button className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8" asChild>
                     <a onClick={() => trackEvent('click', 'Contact', 'Send Email')} href="mailto:info@nexufed.ai">
                       <Mail className="mr-2 w-4 h-4" />
@@ -88,7 +90,7 @@ const Contact = () => {
                   </Button>
                 </div>
 
-                <p className="text-sm mt-6 opacity-75">
+                <p className="text-sm opacity-75">
                   Note: NexuFed AI is a research/startup project (not an incorporated company).
                 </p>
               </div>
