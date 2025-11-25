@@ -81,7 +81,7 @@ const Navigation = () => {
             <img src={logo} alt="NexuFed AI" className="h-8 md:h-10" />
           </Link>
           
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             <button 
               onClick={handleHomeClick}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
@@ -120,7 +120,7 @@ const Navigation = () => {
             </Button>
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="h-10 w-10">
