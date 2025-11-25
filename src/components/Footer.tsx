@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-background border-t border-primary/20 py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <img
               alt="NexuFed AI"
