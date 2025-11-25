@@ -26,16 +26,12 @@ const PrivacyPolicy = () => {
               <p className="leading-relaxed mb-1">
                 René Glitza and Luca Becker    
               </p>
-              <p className="leading-relaxed mb-1">​Zentrum für das Engeneering Smarter Produkt-Service Systeme       </p>
+              <p className="leading-relaxed mb-1">​Zentrum für das Engeneering Smarter Produkt-Service Systeme (ZESS)        </p>
               <p className="leading-relaxed mb-1">Hans-Dobbertin-Str. 8, 44803 Bochum</p>
-              <p className="leading-relaxed mb-1">
-                Fakultät ETIT / Lehrstuhl PTT
-              </p>
-              <p className="leading-relaxed mb-1">
-                Gebäude ID / E04 326 / Fach 16
-              </p>
+              <p className="leading-relaxed mb-1">Etage 2, Raum 12</p>
+              
               <p className="leading-relaxed">
-                E-Mail: info@picoshape.com
+                E-Mail: info@nexufed.ai
               </p>
             </section>
 
