@@ -19,15 +19,8 @@ const Imprint = () => {
                 c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)<br />
                 44803 Bochum, Germany
               </p>
-              <p className="leading-relaxed mb-4">
-                <strong>Represented by:</strong><br />
-                René Glitza<br />
-                Luca Becker
-              </p>
-              <p className="leading-relaxed">
-                +49 234 32 18591<br />
-                info@nexufed.ai
-              </p>
+              
+              
             </section>
 
             <section>
