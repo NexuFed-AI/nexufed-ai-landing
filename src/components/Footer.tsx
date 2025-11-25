@@ -44,12 +44,12 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="/imprint" className="text-foreground hover:text-primary transition-colors">
-                  Impressum
+                  Imprint
                 </a>
               </li>
               <li>
                 <a href="/privacy-policy" className="text-foreground hover:text-primary transition-colors">
-                  Datenschutzerklärung
+                  Privacy Policy
                 </a>
               </li>
               <li>
@@ -57,7 +57,7 @@ const Footer = () => {
                 trackEvent('click', 'Footer', 'Cookie Settings');
                 window.dispatchEvent(new Event('openCookieSettings'));
               }} className="text-foreground hover:text-primary transition-colors">
-                  Cookie-Einstellungen
+                  Cookie Settings
                 </button>
               </li>
             </ul>

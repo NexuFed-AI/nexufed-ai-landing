@@ -11,13 +11,13 @@ const Imprint = () => {
       <main className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-primary">
-            Impressum
+            Imprint
           </h1>
 
           <div className="space-y-8 text-foreground">
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                Angaben gemäß § 5 TMG
+                Information pursuant to § 5 TMG (German Telemedia Act)
               </h2>
               <p className="leading-relaxed">
                 René Glitza<br />
@@ -29,16 +29,16 @@ const Imprint = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-primary">Kontakt</h2>
+              <h2 className="text-2xl font-bold mb-4 text-primary">Contact</h2>
               <p className="leading-relaxed">
-                E-Mail: rene.glitza@nexufed.ai<br />
-                Telefon: +49 234 32 18591
+                Email: rene.glitza@nexufed.ai<br />
+                Phone: +49 234 32 18591
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+                Responsible for content according to § 55 para. 2 RStV (German Interstate Broadcasting Agreement)
               </h2>
               <p className="leading-relaxed">
                 René Glitza<br />
@@ -50,10 +50,10 @@ const Imprint = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                EU-Streitschlichtung
+                EU Dispute Resolution
               </h2>
               <p className="leading-relaxed">
-                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
+                The European Commission provides a platform for online dispute resolution (ODR):{" "}
                 <a
                   href="https://ec.europa.eu/consumers/odr/"
                   target="_blank"
@@ -63,75 +63,50 @@ const Imprint = () => {
                   https://ec.europa.eu/consumers/odr/
                 </a>
                 <br />
-                Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                Our email address can be found above in the imprint.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                Verbraucherstreitbeilegung / Universalschlichtungsstelle
+                Consumer Dispute Resolution / Universal Arbitration Board
               </h2>
               <p className="leading-relaxed">
-                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-                Verbraucherschlichtungsstelle teilzunehmen.
+                We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                Haftung für Inhalte
+                Liability for Content
               </h2>
               <p className="leading-relaxed mb-4">
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen
-                Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind
-                wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte
-                fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
-                rechtswidrige Tätigkeit hinweisen.
+                As a service provider, we are responsible for our own content on these pages in accordance with § 7 para. 1 TMG (German Telemedia Act) under general law. According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
               </p>
               <p className="leading-relaxed">
-                Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach
-                den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung
-                ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
-                möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
-                Inhalte umgehend entfernen.
+                Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the point in time at which we become aware of a specific infringement. Upon becoming aware of corresponding legal violations, we will remove this content immediately.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                Haftung für Links
+                Liability for Links
               </h2>
               <p className="leading-relaxed mb-4">
-                Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir
-                keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine
-                Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige
-                Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden
-                zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige
-                Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+                Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.
               </p>
               <p className="leading-relaxed">
-                Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
-                konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden
-                von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                However, permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-primary">Urheberrecht</h2>
+              <h2 className="text-2xl font-bold mb-4 text-primary">Copyright</h2>
               <p className="leading-relaxed mb-4">
-                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
-                unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
-                Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
-                bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-                Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
-                Gebrauch gestattet.
+                The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.
               </p>
               <p className="leading-relaxed">
-                Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden
-                die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als
-                solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung
-                aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden
-                von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                Insofar as the content on this site was not created by the operator, the copyrights of third parties are observed. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.
               </p>
             </section>
           </div>
