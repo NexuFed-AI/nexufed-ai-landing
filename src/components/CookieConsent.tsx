@@ -110,52 +110,54 @@ const CookieConsent = () => {
     setShowSettings(true);
   };
 
-  if (!showBanner) return null;
+  if (!showBanner && !showSettings) return null;
 
   return (
     <>
       {/* Cookie Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 bg-background/95 backdrop-blur-sm border-t border-primary/20 shadow-lg">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-            <div className="flex-1">
-              <h3 className="text-lg font-bold text-foreground mb-2">
-                Cookie Settings
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                We use cookies to improve your experience and optimize our website. 
-                You can adjust your preferences at any time. For more information, please see our{" "}
-                <a href="/privacy-policy" className="text-primary hover:underline">
-                  Privacy Policy
-                </a>
-                .
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
-              <Button
-                variant="outline"
-                onClick={handleDeclineAll}
-                className="w-full sm:w-auto"
-              >
-                Only Necessary
-              </Button>
-              <Button
-                variant="outline"
-                onClick={handleOpenSettings}
-                className="w-full sm:w-auto"
-              >
-                Settings
-              </Button>
-              <Button
-                onClick={handleAcceptAll}
-                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
-              >
-                Accept All
-              </Button>
+      {showBanner && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 bg-background/95 backdrop-blur-sm border-t border-primary/20 shadow-lg">
+          <div className="container mx-auto max-w-6xl">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  Cookie Settings
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  We use cookies to improve your experience and optimize our website. 
+                  You can adjust your preferences at any time. For more information, please see our{" "}
+                  <a href="/privacy-policy" className="text-primary hover:underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+                <Button
+                  variant="outline"
+                  onClick={handleDeclineAll}
+                  className="w-full sm:w-auto"
+                >
+                  Only Necessary
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={handleOpenSettings}
+                  className="w-full sm:w-auto"
+                >
+                  Settings
+                </Button>
+                <Button
+                  onClick={handleAcceptAll}
+                  className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
+                >
+                  Accept All
+                </Button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Cookie Settings Dialog */}
       <Dialog open={showSettings} onOpenChange={setShowSettings}>
