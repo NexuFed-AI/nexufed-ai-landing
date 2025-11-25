@@ -19,7 +19,7 @@ const Imprint = () => {
               </h2>
               <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI.</p>
               <p className="leading-relaxed mb-4">
-                <strong>Project name:</strong> NexuFed AI – René Glitza und Luca Becker GbR
+                <strong>NexuFed AI – René Glitza und Luca Becker GbR</strong>
                 <br />
                 c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)
                 <br />
