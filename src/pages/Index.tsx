@@ -4,8 +4,11 @@ import Technology from "@/components/Technology";
 import Benefits from "@/components/Benefits";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { usePageTracking } from "@/hooks/useAnalytics";
 
 const Index = () => {
+  usePageTracking();
+  
   return (
     <div className="min-h-screen">
       <Navigation />

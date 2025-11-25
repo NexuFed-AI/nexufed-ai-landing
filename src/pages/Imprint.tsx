@@ -1,7 +1,10 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { usePageTracking } from "@/hooks/useAnalytics";
 
 const Imprint = () => {
+  usePageTracking();
+  
   return (
     <div className="min-h-screen">
       <Navigation />

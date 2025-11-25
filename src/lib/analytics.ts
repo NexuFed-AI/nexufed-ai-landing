@@ -1,7 +1,7 @@
 // Google Analytics helper functions
-// Replace 'G-XXXXXXXXXX' with your actual GA4 Measurement ID
+// NexuFed AI GA4 Integration
 
-export const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // TODO: Replace with your GA4 ID
+export const GA_MEASUREMENT_ID = 'G-S8T8X439TL';
 
 // Initialize Google Analytics
 export const initGA = () => {

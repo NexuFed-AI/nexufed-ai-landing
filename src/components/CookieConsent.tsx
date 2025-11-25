@@ -42,11 +42,25 @@ const CookieConsent = () => {
   }, []);
 
   const initializeAnalytics = () => {
-    // Placeholder for Google Analytics initialization
-    // Add your GA4 tracking ID here when ready
-    // Example:
-    // window.gtag('config', 'G-XXXXXXXXXX');
-    console.log("Analytics initialized");
+    // Initialize Google Analytics 4
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-S8T8X439TL`;
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Initialize gtag
+    window.dataLayer = window.dataLayer || [];
+    function gtag(...args: any[]) {
+      window.dataLayer.push(args);
+    }
+    (window as any).gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-S8T8X439TL', {
+      anonymize_ip: true,
+      cookie_flags: 'SameSite=None;Secure',
+    });
+    
+    console.log("Google Analytics initialized");
   };
 
   const handleAcceptAll = () => {

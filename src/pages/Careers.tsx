@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Briefcase, Users, Lightbulb, Globe, Shield, Zap } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { usePageTracking, trackEvent } from "@/hooks/useAnalytics";
 
 const Careers = () => {
+  usePageTracking();
+  
   const values = [
     {
       icon: Lightbulb,
@@ -131,7 +134,10 @@ const Careers = () => {
                 <Button 
                   size="lg"
                   className="bg-[#0A66C2] hover:bg-[#004182] text-white font-semibold px-8 py-6 text-lg"
-                  onClick={() => window.open('https://www.linkedin.com/company/nexufed-ai', '_blank')}
+                  onClick={() => {
+                    trackEvent('click', 'Careers', 'LinkedIn Jobs Button');
+                    window.open('https://www.linkedin.com/company/nexufed-ai', '_blank');
+                  }}
                 >
                   View Jobs on LinkedIn
                 </Button>

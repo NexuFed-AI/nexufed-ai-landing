@@ -2,10 +2,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Shield, Lock, Zap, Users, Award, Target } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { usePageTracking } from "@/hooks/useAnalytics";
 import founderReneImage from "@/assets/founder-rene.jpg";
 import founderLucaImage from "@/assets/founder-luca.png";
 
 const About = () => {
+  usePageTracking();
+  
   const values = [
     {
       icon: Shield,

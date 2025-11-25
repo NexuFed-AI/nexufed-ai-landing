@@ -1,5 +1,7 @@
 import { Linkedin, Github } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { trackEvent } from "@/hooks/useAnalytics";
+
 const Footer = () => {
   return <footer className="bg-background border-t border-primary/20 py-12">
       <div className="container mx-auto px-6">
@@ -54,13 +56,27 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+            <div>
             <h3 className="font-bold mb-4 text-primary">Connect</h3>
             <div className="flex gap-4">
-              <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+              <a 
+                href="https://linkedin.com/company/nexufed" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-foreground hover:text-primary transition-colors" 
+                aria-label="LinkedIn"
+                onClick={() => trackEvent('click', 'Footer', 'LinkedIn')}
+              >
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="https://github.com/NexuFed" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="GitHub">
+              <a 
+                href="https://github.com/NexuFed" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-foreground hover:text-primary transition-colors" 
+                aria-label="GitHub"
+                onClick={() => trackEvent('click', 'Footer', 'GitHub')}
+              >
                 <Github className="w-6 h-6" />
               </a>
             </div>
