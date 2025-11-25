@@ -87,6 +87,12 @@ const Navigation = () => {
             >
               About
             </Link>
+            <Link 
+              to="/careers"
+              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+            >
+              Careers
+            </Link>
             <Button 
               onClick={() => handleNavigateToSection("contact")}
               className="bg-accent hover:bg-accent/90"
