@@ -77,9 +77,9 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
+          <button onClick={handleHomeClick} className="flex items-center">
             <img src={logo} alt="NexuFed AI" className="h-8 md:h-10" />
-          </Link>
+          </button>
           
           <div className="hidden lg:flex items-center gap-8">
             <button 
@@ -131,7 +131,12 @@ const Navigation = () => {
               <SheetContent side="right" className="w-[280px] sm:w-[320px]">
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-center py-6 border-b border-border">
-                    <img src={logo} alt="NexuFed AI" className="h-8" />
+                    <button onClick={() => {
+                      handleHomeClick();
+                      setIsOpen(false);
+                    }}>
+                      <img src={logo} alt="NexuFed AI" className="h-8" />
+                    </button>
                   </div>
                   
                   <nav className="flex flex-col gap-4 py-8 flex-1">
