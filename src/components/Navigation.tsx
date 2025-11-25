@@ -8,6 +8,17 @@ const Navigation = () => {
   const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
 
+  const handleHomeClick = () => {
+    if (isHomePage) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    }
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -52,12 +63,12 @@ const Navigation = () => {
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <Link 
-              to="/"
+            <button 
+              onClick={handleHomeClick}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
             >
               Home
-            </Link>
+            </button>
             <button 
               onClick={() => handleNavigateToSection("technology")}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
