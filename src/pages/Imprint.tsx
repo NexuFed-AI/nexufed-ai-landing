@@ -32,9 +32,9 @@ Universitätsstraße 150
                 Universitätsstraße 150<br />
                 44801 Bochum
               </p>
-              <p className="leading-relaxed mb-4">Authorized representative and responsible for the project:
-René Glitza
-Luca Becker<strong>​</strong><br />
+              <p className="leading-relaxed mb-4">Authorized representative and responsible for the project: René Glitza and Luca Becker​
+
+              <strong>​</strong><br />
                 René Glitza
               </p>
               <p className="leading-relaxed mb-4">
