@@ -165,7 +165,7 @@ const About = () => {
                       <img 
                         src={founder.image} 
                         alt={`${founder.name} - ${founder.role}`}
-                        className="w-full h-full object-cover scale-125 object-[center_30%]"
+                        className="w-full h-full object-cover scale-110 object-[center_20%]"
                       />
                     </div>
                     <CardTitle className="text-2xl text-center">{founder.name}</CardTitle>
