@@ -49,11 +49,10 @@ const PrivacyPolicy = () => {
                 3. Hosting
               </h2>
               <p className="leading-relaxed mb-4">
-                Our website is hosted by IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, Germany. Data processing is carried out as part of order processing in accordance with Art. 28 GDPR.
+                ​Our website is hosted by Vercel Inc., 440 N Barranca Ave Pmb 4133, California, USA. Data processing is carried out as part of order processing in accordance with Art. 28 GDPR.
               </p>
               
-              <h3 className="text-xl font-semibold mb-3">Our website is hosted by Vercel Inc., 440 N Barranca Ave Pmb 4133, California, USA. Data processing is carried out as part of order processing in accordance with Art. 28 GDPR.
-            </h3>
+              
               <p className="leading-relaxed mb-4">
                 Vercel provides web space, domains, email services and other infrastructure. The data processing is carried out for the purpose of the technical provision of the website, including storage, administration and publication of web content, domain administration, e-mail communication as well as security and stability of the systems.
               </p>
