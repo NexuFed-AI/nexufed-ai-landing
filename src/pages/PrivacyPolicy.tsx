@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
               </p>
               <p className="leading-relaxed mb-1">​Zentrum für das Engeneering Smarter Produkt-Service Systeme (ZESS)        </p>
               <p className="leading-relaxed mb-1">Hans-Dobbertin-Str. 8, 44803 Bochum</p>
-              <p className="leading-relaxed mb-1">Etage 2, Raum 12</p>
+              <p className="leading-relaxed mb-1"> Level 2, Room 12</p>
               
               <p className="leading-relaxed">
                 E-Mail: info@nexufed.ai
