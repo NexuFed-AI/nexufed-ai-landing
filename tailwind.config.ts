@@ -51,6 +51,7 @@ export default {
           dark: "hsl(var(--brand-dark))",
           accent: "hsl(var(--brand-accent))",
           blue: "hsl(var(--brand-blue))",
+          "blue-bright": "hsl(var(--brand-blue-bright))",
           gray: "hsl(var(--brand-gray))",
         },
       },
