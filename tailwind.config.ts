@@ -50,6 +50,7 @@ export default {
         brand: {
           dark: "hsl(var(--brand-dark))",
           accent: "hsl(var(--brand-accent))",
+          blue: "hsl(var(--brand-blue))",
           gray: "hsl(var(--brand-gray))",
         },
       },
