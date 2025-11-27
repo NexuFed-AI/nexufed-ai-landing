@@ -71,7 +71,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
+              <div className="bg-gradient-to-br from-primary to-brand-blue rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
                   <p className="text-lg opacity-90">We're here to answer your questions.</p>
