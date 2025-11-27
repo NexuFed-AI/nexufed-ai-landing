@@ -74,7 +74,7 @@ const Technology = () => {
           </Card>
         </div>
 
-        <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-12 text-center text-primary-foreground">
+        <div className="bg-gradient-to-r from-primary to-brand-blue rounded-2xl p-12 text-center text-primary-foreground">
           <h3 className="text-3xl font-bold mb-4">The Future of Industrial AI</h3>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">NexuFed AI combines cutting-edge federated learning with advanced condition monitoring to deliver insights while respecting data privacy and regulatory requirements.</p>
         </div>
