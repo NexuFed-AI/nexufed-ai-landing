@@ -111,12 +111,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full mb-8">
-            <Network className="w-4 h-4" />
-            <span className="text-sm font-medium">Privacy-Preserving AI</span>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-brand-blue-bright">
             Condition Monitoring with Federated Learning
           </h1>
 

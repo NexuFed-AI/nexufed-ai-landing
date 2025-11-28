@@ -63,19 +63,15 @@ const Contact = () => {
 
                 <div className="flex gap-4 mt-8">
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onClick={() => trackEvent('click', 'Contact', 'LinkedIn')}>
-                      <Linkedin className="w-5 h-5" />
-                    </a>
+                    
                   </Button>
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    <a href="https://github.com/NexuFed-AI" target="_blank" rel="noopener noreferrer" aria-label="GitHub" onClick={() => trackEvent('click', 'Contact', 'GitHub')}>
-                      <Github className="w-5 h-5" />
-                    </a>
+                    
                   </Button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
+              <div className="bg-gradient-to-br from-primary to-brand-blue rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
                   <p className="text-lg opacity-90">We're here to answer your questions.</p>
