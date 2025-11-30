@@ -46,9 +46,9 @@ const RoadmapAndContact = () => {
 
         {/* Contact Section */}
         <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Let's <span className="text-brand-blue-bright">Connect</span>
-          </h3>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to transform condition monitoring with federated learning?</p>
         </div>
 
