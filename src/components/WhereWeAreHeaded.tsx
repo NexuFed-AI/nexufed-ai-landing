@@ -2,31 +2,35 @@ import { Check } from "lucide-react";
 
 const WhereWeAreHeaded = () => {
   const useCases = [
-    "Rotating machinery in process industries – pumps, motors, fans and compressors where downtime is costly",
-    "OEM-level condition monitoring – machine builders offering smart monitoring to customers",
-    "Privacy-sensitive environments – sites where raw data cannot leave the plant",
-    "Future domains – quality assurance, robotics, and other industrial AI applications",
+    { title: "Rotating machinery in process industries", description: "pumps, motors, fans and compressors where downtime is costly" },
+    { title: "OEM-level condition monitoring", description: "machine builders offering smart monitoring to customers" },
+    { title: "Privacy-sensitive environments", description: "sites where raw data cannot leave the plant" },
+    { title: "Future domains", description: "quality assurance, robotics, and other industrial AI applications" },
   ];
 
   const goals = [
     {
       title: "Privacy by design",
       target: "100%",
+      barWidth: "100%",
       description: "Raw data retention on-site",
     },
     {
       title: "Joint learning, individual performance",
       target: "90%+",
+      barWidth: "90%",
       description: "Accuracy on relevant detection tasks",
     },
     {
       title: "Less labeling effort",
       target: "70–90%",
+      barWidth: "80%",
       description: "Reduction in manual labels",
     },
     {
       title: "Continuous adaptation",
       target: "3×",
+      barWidth: "75%",
       description: "Faster iteration to deployed model",
     },
   ];
@@ -55,7 +59,9 @@ const WhereWeAreHeaded = () => {
                       <Check className="w-4 h-4 text-accent" />
                     </div>
                   </div>
-                  <span className="text-foreground leading-relaxed">{useCase}</span>
+                  <span className="text-foreground leading-relaxed">
+                    <span className="font-semibold">{useCase.title}</span> – {useCase.description}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -82,10 +88,7 @@ const WhereWeAreHeaded = () => {
                     <div className="w-full bg-muted/30 rounded-full h-2 mb-1">
                       <div 
                         className="bg-accent h-2 rounded-full transition-all duration-1000"
-                        style={{ 
-                          width: goal.target.includes('%') ? goal.target : 
-                                 goal.target === '3×' ? '75%' : '100%' 
-                        }}
+                        style={{ width: goal.barWidth }}
                       />
                     </div>
                     <p className="text-sm text-muted-foreground">{goal.description}</p>
