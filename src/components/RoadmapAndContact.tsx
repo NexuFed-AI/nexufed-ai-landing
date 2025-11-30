@@ -20,7 +20,7 @@ const RoadmapAndContact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            From research to <span className="text-accent">real-world deployments</span>
+            From research to <span className="text-brand-blue-bright">real-world deployments</span>
           </h2>
         </div>
 
@@ -47,7 +47,8 @@ const RoadmapAndContact = () => {
         {/* Contact Section */}
         <div className="text-center mb-12">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
-        </h3>
+            Let's <span className="text-brand-blue-bright">Connect</span>
+          </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to transform condition monitoring with federated learning?</p>
         </div>
 
