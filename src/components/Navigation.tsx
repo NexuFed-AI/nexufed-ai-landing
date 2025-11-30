@@ -95,7 +95,7 @@ const Navigation = () => {
               Technology
             </button>
             <button 
-              onClick={() => handleNavigateToSection("why-nexufed")}
+              onClick={() => handleNavigateToSection("where-headed")}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
             >
               Benefits
@@ -113,7 +113,7 @@ const Navigation = () => {
               Careers
             </Link>
             <Button 
-              onClick={() => handleNavigateToSection("contact")}
+              onClick={() => handleNavigateToSection("roadmap")}
               className="bg-accent hover:bg-accent/90"
             >
               Get in Touch
@@ -156,7 +156,7 @@ const Navigation = () => {
                       Technology
                     </button>
                     <button 
-                      onClick={() => handleNavigateToSection("why-nexufed")}
+                      onClick={() => handleNavigateToSection("where-headed")}
                       className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
                     >
                       Benefits
@@ -180,7 +180,7 @@ const Navigation = () => {
                     
                     <div className="mt-auto pt-6">
                       <Button 
-                        onClick={() => handleNavigateToSection("contact")}
+                        onClick={() => handleNavigateToSection("roadmap")}
                         className="w-full bg-accent hover:bg-accent/90"
                       >
                         Get in Touch

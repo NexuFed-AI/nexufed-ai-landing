@@ -2,10 +2,8 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Approach from "@/components/Approach";
-import Applications from "@/components/Applications";
-import WhyNexuFed from "@/components/WhyNexuFed";
-import Roadmap from "@/components/Roadmap";
-import Contact from "@/components/Contact";
+import WhereWeAreHeaded from "@/components/WhereWeAreHeaded";
+import RoadmapAndContact from "@/components/RoadmapAndContact";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
 
@@ -19,10 +17,8 @@ const Index = () => {
         <Hero />
         <Problem />
         <Approach />
-        <Applications />
-        <WhyNexuFed />
-        <Roadmap />
-        <Contact />
+        <WhereWeAreHeaded />
+        <RoadmapAndContact />
       </main>
       <Footer />
     </div>

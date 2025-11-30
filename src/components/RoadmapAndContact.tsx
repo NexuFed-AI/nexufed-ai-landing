@@ -1,16 +1,67 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Calendar, Linkedin, Github } from "lucide-react";
+import { FlaskConical, Rocket, TrendingUp, Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { trackEvent } from "@/hooks/useAnalytics";
-const Contact = () => {
-  return <section id="contact" className="py-24 bg-muted/30">
+
+const RoadmapAndContact = () => {
+  const roadmapSteps = [
+    {
+      icon: FlaskConical,
+      title: "Today – Research & prototypes",
+      description: "Active research on federated learning and anomaly detection, lab-scale proof-of-concepts.",
+    },
+    {
+      icon: Rocket,
+      title: "Next – Prototypes & pilots with partners",
+      description: "Build robust prototype implementations with selected OEM and industrial partners.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Later – Scalable privacy-preserving condition monitoring platform",
+      description: "Towards a production-ready platform for fleets of industrial assets.",
+    },
+  ];
+
+  return (
+    <section id="roadmap" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's <span className="text-accent">Connect</span>
+            From research to <span className="text-accent">real-world deployments</span>
           </h2>
+        </div>
+
+        {/* Roadmap Steps */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
+          {roadmapSteps.map((step, index) => (
+            <Card key={index} className="p-8 border-2">
+              <div className="flex flex-col items-center text-center">
+                <div className="p-4 bg-accent/10 rounded-lg mb-4">
+                  <step.icon className="w-8 h-8 text-accent" />
+                </div>
+                <h3 className="text-xl font-bold mb-4">{step.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Ecosystem Note */}
+        <div className="mb-16 text-center">
+          <p className="text-muted-foreground max-w-3xl mx-auto">
+            We are also in conversation with the broader startup ecosystem to prepare for future funding and scaling.
+          </p>
+        </div>
+
+        {/* Contact Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to transform your condition monitoring with federated learning?
+          </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your condition monitoring with federated learning? Get in touch to discuss your project.
+            Get in touch to discuss your project, potential pilots or collaboration opportunities.
           </p>
         </div>
 
@@ -18,7 +69,7 @@ const Contact = () => {
           <Card className="p-8 md:p-12 border-2">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                <h4 className="text-2xl font-bold mb-6">Contact Information</h4>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -63,17 +114,21 @@ const Contact = () => {
 
                 <div className="flex gap-4 mt-8">
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    
+                    <a href="https://linkedin.com/company/nexufed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild className="border-2">
-                    
+                    <a href="https://github.com/NexuFed-AI" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <Github className="w-5 h-5" />
+                    </a>
                   </Button>
                 </div>
               </div>
 
               <div className="bg-gradient-to-br from-primary to-brand-blue rounded-xl p-8 text-primary-foreground flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h3>
+                  <h4 className="text-2xl font-bold mb-4">Contact the NexuFed Team</h4>
                   <p className="text-lg opacity-90">We're here to answer your questions.</p>
                 </div>
 
@@ -103,6 +158,8 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
-export default Contact;
+
+export default RoadmapAndContact;
