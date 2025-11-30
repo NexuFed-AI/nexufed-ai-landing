@@ -1,54 +1,33 @@
-import { Card } from "@/components/ui/card";
-import { Cog, Building2, Shield, Sparkles, Lock, Network, Tag, TrendingUp } from "lucide-react";
+import { Check } from "lucide-react";
 
 const WhereWeAreHeaded = () => {
   const useCases = [
-    {
-      icon: Cog,
-      title: "Rotating machinery in process industries",
-      description: "Pumps, motors, fans and compressors where downtime is costly and failures are rare. Continuous monitoring with privacy-preserving learning across many similar assets.",
-    },
-    {
-      icon: Building2,
-      title: "OEM-level condition monitoring offerings",
-      description: "Machine builders who want to offer smart monitoring to their customers. Federated models let OEMs learn from fleets without centralizing raw data.",
-    },
-    {
-      icon: Shield,
-      title: "Privacy- and compliance-sensitive environments",
-      description: "Sites where raw data cannot leave the plant (IP, regulation, critical infrastructure). Federated learning keeps data on-premise while still improving models.",
-    },
-    {
-      icon: Sparkles,
-      title: "Future domains",
-      description: "Long term: quality assurance, robotics, and other industrial AI applications where data is distributed and sensitive.",
-    },
+    "Rotating machinery in process industries – pumps, motors, fans and compressors where downtime is costly",
+    "OEM-level condition monitoring – machine builders offering smart monitoring to customers",
+    "Privacy-sensitive environments – sites where raw data cannot leave the plant",
+    "Future domains – quality assurance, robotics, and other industrial AI applications",
   ];
 
   const goals = [
     {
-      icon: Lock,
       title: "Privacy by design",
-      target: "Target: 100% raw data retention on-site",
-      description: "Raw sensor data always stays on-site. Only encrypted or aggregated model updates leave the plant.",
+      target: "100%",
+      description: "Raw data retention on-site",
     },
     {
-      icon: Network,
       title: "Joint learning, individual performance",
-      target: "Target: 90%+ accuracy on relevant detection tasks",
-      description: "Global models learn from many machines and sites. Each machine can receive a personalized variant tuned to its behavior. This is a design ambition and depends on the specific machine, data quality, and use case.",
+      target: "90%+",
+      description: "Accuracy on relevant detection tasks",
     },
     {
-      icon: Tag,
       title: "Less labeling effort",
-      target: "Target: 70–90% reduction in manual labels",
-      description: "Self-supervised and active learning reduce the need for manual labels. Operators focus on confirming or annotating only the most important events. Real-world results will vary by project.",
+      target: "70–90%",
+      description: "Reduction in manual labels",
     },
     {
-      icon: TrendingUp,
       title: "Continuous adaptation",
-      target: "Target: up to 3× faster iteration from first data to deployed model",
-      description: "Models update over time as machines age, processes change, and new conditions appear. The goal is to speed up deployment and iteration compared to building bespoke ML pipelines from scratch.",
+      target: "3×",
+      description: "Faster iteration to deployed model",
     },
   ];
 
@@ -57,75 +36,67 @@ const WhereWeAreHeaded = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Where we're <span className="text-accent">headed</span>
+            Where we're <span className="text-brand-blue-bright">headed</span>
           </h2>
         </div>
 
-        {/* Use Cases Subsection */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold mb-8 text-center">Use cases we're focusing on</h3>
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {useCases.map((useCase, index) => (
-              <Card 
-                key={index}
-                className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-accent/10 rounded-lg flex-shrink-0">
-                    <useCase.icon className="w-6 h-6 text-accent" />
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          {/* Use Cases */}
+          <div>
+            <h3 className="text-3xl font-bold mb-6">Use cases we're focusing on</h3>
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              Our federated learning platform adapts to your industry's unique challenges, delivering actionable insights while keeping your data secure.
+            </p>
+            <ul className="space-y-4">
+              {useCases.map((useCase, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <div className="mt-1 flex-shrink-0">
+                    <div className="w-5 h-5 rounded-sm bg-accent/20 flex items-center justify-center">
+                      <Check className="w-4 h-4 text-accent" />
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-2xl font-bold mb-3">{useCase.title}</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {useCase.description}
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center">
-            <p className="text-lg text-muted-foreground">
+                  <span className="text-foreground leading-relaxed">{useCase}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-muted-foreground mt-6 italic">
               If you see your use case here—or close to it—we'd love to explore it with you.
             </p>
           </div>
-        </div>
 
-        {/* Goals Subsection */}
-        <div>
-          <h3 className="text-3xl font-bold mb-6 text-center">Our goals</h3>
-          <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-12 text-center">
-            We are designing NexuFed around a set of goals to address the realities of industrial AI. These are the capabilities we are working towards as we move from research to real-world deployments. The numbers below are design targets, not guaranteed results, and will depend on the specific use case.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {goals.map((goal, index) => (
-              <Card 
-                key={index}
-                className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-accent/10 rounded-lg flex-shrink-0">
-                    <goal.icon className="w-6 h-6 text-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-2xl font-bold mb-2">{goal.title}</h4>
-                    <div className="inline-block px-3 py-1 bg-accent/10 rounded-md mb-3">
-                      <span className="text-sm font-semibold text-accent">{goal.target}</span>
+          {/* Goals */}
+          <div>
+            <div className="border-2 border-border rounded-xl p-8 bg-card/50">
+              <h3 className="text-3xl font-bold mb-4">Our goals</h3>
+              <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
+                We are designing NexuFed around a set of goals to address the realities of industrial AI. These are design targets we are working towards as we move from research to real-world deployments.
+              </p>
+              
+              <div className="space-y-6">
+                {goals.map((goal, index) => (
+                  <div key={index}>
+                    <div className="flex items-baseline justify-between mb-2">
+                      <h4 className="font-bold text-foreground">{goal.title}</h4>
+                      <span className="text-accent font-bold text-lg">{goal.target}</span>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {goal.description}
-                    </p>
+                    <div className="w-full bg-muted/30 rounded-full h-2 mb-1">
+                      <div 
+                        className="bg-accent h-2 rounded-full transition-all duration-1000"
+                        style={{ 
+                          width: goal.target.includes('%') ? goal.target : 
+                                 goal.target === '3×' ? '75%' : '100%' 
+                        }}
+                      />
+                    </div>
+                    <p className="text-sm text-muted-foreground">{goal.description}</p>
                   </div>
-                </div>
-              </Card>
-            ))}
-          </div>
+                ))}
+              </div>
 
-          <div className="text-center">
-            <p className="text-sm text-muted-foreground italic">
-              All targets are indicative design goals and will be validated and refined with real-world data and pilot projects.
-            </p>
+              <p className="text-xs text-muted-foreground mt-6 italic">
+                All targets are indicative design goals and will be validated and refined with real-world data and pilot projects.
+              </p>
+            </div>
           </div>
         </div>
       </div>
