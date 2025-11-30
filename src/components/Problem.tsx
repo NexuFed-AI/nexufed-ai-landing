@@ -30,7 +30,7 @@ const Problem = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            The problem: <span className="text-accent">data is scarce, sensitive and fragmented</span>
+            The problem: <span className="text-brand-blue-bright">data is scarce, sensitive and fragmented</span>
           </h2>
         </div>
 
