@@ -111,52 +111,41 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-brand-blue-bright">
-            Condition Monitoring with Federated Learning
+          {/* Status badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">
+            Research & prototype phase – seeking OEM partners and co-founders
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="text-brand-blue-bright">Federated AI</span> for Industrial Condition Monitoring
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Revolutionizing industrial condition monitoring through privacy-preserving collaborative AI. 
-            Train powerful models without centralizing sensitive data.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            NexuFed is building a privacy-preserving federated learning platform that lets machine builders and industrial operators train powerful condition monitoring models across fleets—without sharing raw machine data.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
               onClick={() => scrollToSection("contact")}
               className="bg-accent hover:bg-accent/90 text-lg group"
             >
-              Get Started
+              Talk about a pilot
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              onClick={() => scrollToSection("technology")}
+              onClick={() => scrollToSection("contact")}
               className="text-lg border-2"
             >
-              Learn More
+              Get in touch
             </Button>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Data Privacy</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">0</div>
-              <div className="text-sm text-muted-foreground">Data Transfers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">Monitoring</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">AI</div>
-              <div className="text-sm text-muted-foreground">Powered</div>
-            </div>
-          </div>
+          <p className="text-base text-muted-foreground/80 max-w-2xl mx-auto italic">
+            Rooted in cutting-edge research on federated learning and anomaly detection, NexuFed bridges the gap between industrial reality and state-of-the-art AI.
+          </p>
         </div>
       </div>
     </section>
