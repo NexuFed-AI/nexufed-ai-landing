@@ -1,7 +1,10 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Technology from "@/components/Technology";
-import Benefits from "@/components/Benefits";
+import Problem from "@/components/Problem";
+import Approach from "@/components/Approach";
+import Applications from "@/components/Applications";
+import WhyNexuFed from "@/components/WhyNexuFed";
+import Roadmap from "@/components/Roadmap";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
@@ -14,8 +17,11 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <Technology />
-        <Benefits />
+        <Problem />
+        <Approach />
+        <Applications />
+        <WhyNexuFed />
+        <Roadmap />
         <Contact />
       </main>
       <Footer />
