@@ -29,10 +29,10 @@ const WhereWeAreHeaded = () => {
     barWidth: "80%",
     description: "Reduction in manual labels"
   }, {
-    title: "Continuous adaptation",
+    title: "Plug & Play Continuous Adaptation",
     target: "3×",
     barWidth: "75%",
-    description: "Faster iteration to deployed model"
+    description: "Faster deployment and integration"
   }];
   return <section id="where-headed" className="py-24 bg-background">
       <div className="container mx-auto px-6">
