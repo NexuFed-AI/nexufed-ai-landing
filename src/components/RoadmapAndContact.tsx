@@ -2,28 +2,21 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FlaskConical, Rocket, TrendingUp, Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { trackEvent } from "@/hooks/useAnalytics";
-
 const RoadmapAndContact = () => {
-  const roadmapSteps = [
-    {
-      icon: FlaskConical,
-      title: "Today – Research & prototypes",
-      description: "Active research on federated learning and anomaly detection, lab-scale proof-of-concepts.",
-    },
-    {
-      icon: Rocket,
-      title: "Next – Prototypes & pilots with partners",
-      description: "Build robust prototype implementations with selected OEM and industrial partners.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Later – Scalable privacy-preserving condition monitoring platform",
-      description: "Towards a production-ready platform for fleets of industrial assets.",
-    },
-  ];
-
-  return (
-    <section id="roadmap" className="py-24 bg-muted/30">
+  const roadmapSteps = [{
+    icon: FlaskConical,
+    title: "Today – Research & prototypes",
+    description: "Active research on federated learning and anomaly detection, lab-scale proof-of-concepts."
+  }, {
+    icon: Rocket,
+    title: "Next – Prototypes & pilots with partners",
+    description: "Build robust prototype implementations with selected OEM and industrial partners."
+  }, {
+    icon: TrendingUp,
+    title: "Later – Scalable privacy-preserving condition monitoring platform",
+    description: "Towards a production-ready platform for fleets of industrial assets."
+  }];
+  return <section id="roadmap" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -33,8 +26,7 @@ const RoadmapAndContact = () => {
 
         {/* Roadmap Steps */}
         <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
-          {roadmapSteps.map((step, index) => (
-            <Card key={index} className="p-8 border-2">
+          {roadmapSteps.map((step, index) => <Card key={index} className="p-8 border-2">
               <div className="flex flex-col items-center text-center">
                 <div className="p-4 bg-accent/10 rounded-lg mb-4">
                   <step.icon className="w-8 h-8 text-accent" />
@@ -44,25 +36,19 @@ const RoadmapAndContact = () => {
                   {step.description}
                 </p>
               </div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Ecosystem Note */}
         <div className="mb-16 text-center">
-          <p className="text-muted-foreground max-w-3xl mx-auto">
-            We are also in conversation with the broader startup ecosystem to prepare for future funding and scaling.
-          </p>
+          
         </div>
 
         {/* Contact Section */}
         <div className="text-center mb-12">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to transform your condition monitoring with federated learning?
-          </h3>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get in touch to discuss your project, potential pilots or collaboration opportunities.
-          </p>
+        </h3>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to transform condition monitoring with federated learning?</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -158,8 +144,6 @@ const RoadmapAndContact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default RoadmapAndContact;
