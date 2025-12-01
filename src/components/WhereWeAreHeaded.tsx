@@ -29,7 +29,7 @@ const WhereWeAreHeaded = () => {
     barWidth: "80%",
     description: "Reduction in manual labels"
   }, {
-    title: "Plug & Play Continuous Adaptation",
+    title: "Plug & play continuous adaptation",
     target: "3×",
     barWidth: "75%",
     description: "Faster deployment and integration"
