@@ -89,13 +89,13 @@ const Navigation = () => {
               Home
             </button>
             <button 
-              onClick={() => handleNavigateToSection("technology")}
+              onClick={() => handleNavigateToSection("approach")}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
             >
               Technology
             </button>
             <button 
-              onClick={() => handleNavigateToSection("benefits")}
+              onClick={() => handleNavigateToSection("where-headed")}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
             >
               Benefits
@@ -113,7 +113,7 @@ const Navigation = () => {
               Careers
             </Link>
             <Button 
-              onClick={() => handleNavigateToSection("contact")}
+              onClick={() => handleNavigateToSection("roadmap")}
               className="bg-accent hover:bg-accent/90"
             >
               Get in Touch
@@ -150,13 +150,13 @@ const Navigation = () => {
                       Home
                     </button>
                     <button 
-                      onClick={() => handleNavigateToSection("technology")}
+                      onClick={() => handleNavigateToSection("approach")}
                       className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
                     >
                       Technology
                     </button>
                     <button 
-                      onClick={() => handleNavigateToSection("benefits")}
+                      onClick={() => handleNavigateToSection("where-headed")}
                       className="text-lg font-medium text-foreground hover:text-accent transition-colors text-left px-4 py-2 hover:bg-muted rounded-md"
                     >
                       Benefits
@@ -180,7 +180,7 @@ const Navigation = () => {
                     
                     <div className="mt-auto pt-6">
                       <Button 
-                        onClick={() => handleNavigateToSection("contact")}
+                        onClick={() => handleNavigateToSection("roadmap")}
                         className="w-full bg-accent hover:bg-accent/90"
                       >
                         Get in Touch
