@@ -73,8 +73,9 @@ const About = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              About NexuFed AI
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-foreground">About</span>{" "}
+              <span className="text-brand-blue-bright">NexuFed AI</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Building the future of industrial intelligence through privacy-preserving, 
