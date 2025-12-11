@@ -130,7 +130,7 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Our Story</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Story</span></h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="leading-relaxed mb-6">
                 NexuFed AI was born from years of research experience in privacy-preserving artificial 
