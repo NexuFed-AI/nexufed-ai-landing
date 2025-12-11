@@ -159,7 +159,7 @@ const About = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Our Founders</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Founders</span></h2>
             <div className="grid md:grid-cols-2 gap-8">
               {founders.map((founder, index) => (
                 <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
@@ -193,7 +193,7 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Our Values</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Values</span></h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map((value, index) => {
                 const Icon = value.icon;
