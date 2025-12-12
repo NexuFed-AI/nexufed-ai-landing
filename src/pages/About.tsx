@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Puzzle, Wrench, ShieldCheck, Gauge, BarChart3, Lock, Target, Zap } from "lucide-react";
+import { Shield, Zap, Users, Lightbulb, Rocket, Lock, Target } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
@@ -8,25 +8,25 @@ import founderLucaImage from "@/assets/founder-luca.png";
 const About = () => {
   usePageTracking();
   const values = [{
-    icon: Puzzle,
-    title: "Plug-and-Play Simplicity",
-    description: "We build solutions that are easy to adopt and integrate, delivering value fast with minimal operational overhead."
+    icon: Shield,
+    title: "Privacy by Design",
+    description: "Data protection and confidentiality are built into every layer of our technology."
   }, {
-    icon: Wrench,
-    title: "Industrial Pragmatism",
-    description: "We prioritize what works on the shop floor—robust, maintainable, and built for real-world constraints."
+    icon: Zap,
+    title: "Cutting-Edge Technology",
+    description: "We use and advance state-of-the-art research & technology to provide clear value and always stay on top."
   }, {
-    icon: ShieldCheck,
-    title: "Preventive Mindset",
-    description: "We focus on early detection and prevention to reduce downtime, risk, and cost before problems escalate."
+    icon: Users,
+    title: "Joint Success",
+    description: "Only by thinking win-win we can achieve our goals together."
   }, {
-    icon: Gauge,
-    title: "Efficiency as a Standard",
-    description: "We optimize for lean deployment and operation—saving time, compute, and cost without sacrificing results."
+    icon: Lightbulb,
+    title: "Solution Oriented",
+    description: "Constraints are just design parameters, not blockers."
   }, {
-    icon: BarChart3,
-    title: "Measurable Impact",
-    description: "We commit to outcomes you can quantify: fewer failures, lower costs, and more reliable operations."
+    icon: Rocket,
+    title: "Bias to Action",
+    description: "We move quickly from idea to execution, learning from real-world feedback instead of waiting for perfect conditions."
   }, {
     icon: Lock,
     title: "Security & Trust",
