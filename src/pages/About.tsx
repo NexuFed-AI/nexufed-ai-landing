@@ -114,11 +114,7 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-8 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Story</span></h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="leading-relaxed mb-6">
-                NexuFed AI was born from years of research experience in privacy-preserving artificial 
-                intelligence and industrial condition monitoring. Our founders recognized a critical gap 
-                in the industry: while machine learning could dramatically improve predictive maintenance 
-                and operational efficiency, companies were reluctant to share their sensitive operational 
-                data—even when collaboration could benefit everyone.
+                NexuFed AI was born from years of research in privacy-preserving artificial intelligence and industrial condition monitoring. Our founders recognized a critical gap: while machine learning can dramatically improve predictive maintenance and operational efficiency, many companies are understandably reluctant to share sensitive operational data—even when collaboration could benefit everyone.
               </p>
               <p className="leading-relaxed mb-6">
                 Through extensive work in federated learning and distributed AI systems, we developed 
