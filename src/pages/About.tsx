@@ -120,9 +120,7 @@ const About = () => {
                 ​That is why we took the initiative to bring our research into the real world. Through extensive work in federated learning and distributed AI systems, we are building a solution that enables multiple facilities to collaboratively train powerful monitoring models without ever sharing raw sensor data. Each site keeps its data local and private, yet collectively benefits from insights learned across the entire network.
               </p>
               <p className="leading-relaxed">
-                Today, NexuFed AI stands at the intersection of cutting-edge AI research and practical 
-                industrial applications, delivering trustworthy, transparent, and highly effective 
-                condition monitoring solutions for valves, pumps, and critical machinery.
+                Today, NexuFed AI stands at the intersection of cutting-edge research and practical industrial application. We're focused on continuously improving our technology, making it accessible for real-world deployments, and partnering with teams who want to drive the next evolution of condition monitoring together with us.
               </p>
             </div>
           </div>
