@@ -98,9 +98,7 @@ const About = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    A world where industrial facilities benefit from collective intelligence through 
-                    federated learning, achieving superior predictive maintenance and operational 
-                    excellence while maintaining complete data sovereignty and trust.
+                    A world where everyone benefits from collective intelligence through private, collaborative federated learning—unlocking secure access to shared data-driven insights across all industries and fields, while maintaining complete data sovereignty and trust.
                   </p>
                 </CardContent>
               </Card>
