@@ -30,7 +30,7 @@ const About = () => {
   }, {
     icon: Lock,
     title: "Security & Trust",
-    description: "Enterprise-grade security with federated learning that keeps sensitive data local."
+    description: "We build trust through consistent honesty, clear communication, and we work hard to keep every commitment."
   }];
   const founders = [{
     name: "René Glitza",
