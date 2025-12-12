@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Lock, Zap, Users, Award, Target } from "lucide-react";
+import { Puzzle, Wrench, ShieldCheck, Gauge, BarChart3, Lock, Target, Zap } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
@@ -8,25 +8,25 @@ import founderLucaImage from "@/assets/founder-luca.png";
 const About = () => {
   usePageTracking();
   const values = [{
-    icon: Shield,
-    title: "Privacy by Design",
-    description: "Data protection and confidentiality are built into every layer of our technology."
+    icon: Puzzle,
+    title: "Plug-and-Play Simplicity",
+    description: "We build solutions that are easy to adopt and integrate, delivering value fast with minimal operational overhead."
   }, {
-    icon: Zap,
-    title: "Industrial Reliability",
-    description: "Robust, proven solutions designed for the demanding requirements of industrial environments."
+    icon: Wrench,
+    title: "Industrial Pragmatism",
+    description: "We prioritize what works on the shop floor—robust, maintainable, and built for real-world constraints."
   }, {
-    icon: Target,
-    title: "Transparency",
-    description: "Clear, explainable AI models that engineers and operators can trust and understand."
+    icon: ShieldCheck,
+    title: "Preventive Mindset",
+    description: "We focus on early detection and prevention to reduce downtime, risk, and cost before problems escalate."
   }, {
-    icon: Award,
-    title: "Cutting-Edge Research",
-    description: "Grounded in academic research and continuously advancing the state of the art."
+    icon: Gauge,
+    title: "Efficiency as a Standard",
+    description: "We optimize for lean deployment and operation—saving time, compute, and cost without sacrificing results."
   }, {
-    icon: Users,
-    title: "Human-Centered AI",
-    description: "Technology that empowers people, respects privacy, and enhances decision-making."
+    icon: BarChart3,
+    title: "Measurable Impact",
+    description: "We commit to outcomes you can quantify: fewer failures, lower costs, and more reliable operations."
   }, {
     icon: Lock,
     title: "Security & Trust",
