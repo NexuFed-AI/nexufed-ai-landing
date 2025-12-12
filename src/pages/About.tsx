@@ -29,7 +29,7 @@ const About = () => {
     description: "We move quickly from idea to execution, learning from real-world feedback instead of waiting for perfect conditions."
   }, {
     icon: Lock,
-    title: "Security & Trust",
+    title: "Trust through Honesty",
     description: "We build trust through consistent honesty, clear communication, and we work hard to keep every commitment."
   }];
   const founders = [{
