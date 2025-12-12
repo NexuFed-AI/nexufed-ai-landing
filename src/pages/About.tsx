@@ -117,10 +117,7 @@ const About = () => {
                 NexuFed AI was born from years of research in privacy-preserving artificial intelligence and industrial condition monitoring. Our founders recognized a critical gap: while machine learning can dramatically improve predictive maintenance and operational efficiency, many companies are understandably reluctant to share sensitive operational data—even when collaboration could benefit everyone.
               </p>
               <p className="leading-relaxed mb-6">
-                Through extensive work in federated learning and distributed AI systems, we developed 
-                a solution that enables multiple facilities to collaboratively train powerful monitoring 
-                models without ever sharing raw sensor data. Each site keeps its data local and private, 
-                yet collectively benefits from insights derived across the entire network.
+                ​That is why we took the initiative to bring our research into the real world. Through extensive work in federated learning and distributed AI systems, we are building a solution that enables multiple facilities to collaboratively train powerful monitoring models without ever sharing raw sensor data. Each site keeps its data local and private, yet collectively benefits from insights learned across the entire network.
               </p>
               <p className="leading-relaxed">
                 Today, NexuFed AI stands at the intersection of cutting-edge AI research and practical 
