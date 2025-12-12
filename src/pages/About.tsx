@@ -35,7 +35,7 @@ const About = () => {
   const founders = [{
     name: "René Glitza",
     role: "CEO & CTO",
-    bio: "Expert in applied AI, industrial analytics, and data-driven monitoring. René leads the technical vision and product development, bringing deep experience in machine learning strategy and real-world deployment of intelligent monitoring systems.",
+    bio: "Expert in federated learning and industrial condition monitoring. René leads the technical vision and product development, combining deep-tech research and real-world experience with product leadership to take solutions from pilot to production.",
     image: founderReneImage
   }, {
     name: "Luca Becker",
