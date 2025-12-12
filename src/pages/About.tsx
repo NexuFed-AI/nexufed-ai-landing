@@ -40,7 +40,7 @@ const About = () => {
   }, {
     name: "Luca Becker",
     role: "CAIO (Chief AI Officer)",
-    bio: "Specialist in distributed AI, federated learning, and privacy-preserving machine learning. Luca drives the AI research and development, with extensive expertise in large-scale audio-visual systems and decentralized learning architectures.",
+    bio: "Specialist in distributed AI, federated learning, and privacy-preserving machine learning. Luca drives the AI research and development, with extensive expertise in large-scale multi-modal systems and decentralized learning architectures.",
     image: founderLucaImage
   }];
   return <div className="min-h-screen bg-background">
