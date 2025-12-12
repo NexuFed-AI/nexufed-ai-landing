@@ -5,60 +5,45 @@ import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
 import founderReneImage from "@/assets/founder-rene.jpg";
 import founderLucaImage from "@/assets/founder-luca.png";
-
 const About = () => {
   usePageTracking();
-  
-  const values = [
-    {
-      icon: Shield,
-      title: "Privacy by Design",
-      description: "Data protection and confidentiality are built into every layer of our technology."
-    },
-    {
-      icon: Zap,
-      title: "Industrial Reliability",
-      description: "Robust, proven solutions designed for the demanding requirements of industrial environments."
-    },
-    {
-      icon: Target,
-      title: "Transparency",
-      description: "Clear, explainable AI models that engineers and operators can trust and understand."
-    },
-    {
-      icon: Award,
-      title: "Cutting-Edge Research",
-      description: "Grounded in academic research and continuously advancing the state of the art."
-    },
-    {
-      icon: Users,
-      title: "Human-Centered AI",
-      description: "Technology that empowers people, respects privacy, and enhances decision-making."
-    },
-    {
-      icon: Lock,
-      title: "Security & Trust",
-      description: "Enterprise-grade security with federated learning that keeps sensitive data local."
-    }
-  ];
-
-  const founders = [
-    {
-      name: "René Glitza",
-      role: "CEO & CTO",
-      bio: "Expert in applied AI, industrial analytics, and data-driven monitoring. René leads the technical vision and product development, bringing deep experience in machine learning strategy and real-world deployment of intelligent monitoring systems.",
-      image: founderReneImage
-    },
-    {
-      name: "Luca Becker",
-      role: "CAIO (Chief AI Officer)",
-      bio: "Specialist in distributed AI, federated learning, and privacy-preserving machine learning. Luca drives the AI research and development, with extensive expertise in large-scale audio-visual systems and decentralized learning architectures.",
-      image: founderLucaImage
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const values = [{
+    icon: Shield,
+    title: "Privacy by Design",
+    description: "Data protection and confidentiality are built into every layer of our technology."
+  }, {
+    icon: Zap,
+    title: "Industrial Reliability",
+    description: "Robust, proven solutions designed for the demanding requirements of industrial environments."
+  }, {
+    icon: Target,
+    title: "Transparency",
+    description: "Clear, explainable AI models that engineers and operators can trust and understand."
+  }, {
+    icon: Award,
+    title: "Cutting-Edge Research",
+    description: "Grounded in academic research and continuously advancing the state of the art."
+  }, {
+    icon: Users,
+    title: "Human-Centered AI",
+    description: "Technology that empowers people, respects privacy, and enhances decision-making."
+  }, {
+    icon: Lock,
+    title: "Security & Trust",
+    description: "Enterprise-grade security with federated learning that keeps sensitive data local."
+  }];
+  const founders = [{
+    name: "René Glitza",
+    role: "CEO & CTO",
+    bio: "Expert in applied AI, industrial analytics, and data-driven monitoring. René leads the technical vision and product development, bringing deep experience in machine learning strategy and real-world deployment of intelligent monitoring systems.",
+    image: founderReneImage
+  }, {
+    name: "Luca Becker",
+    role: "CAIO (Chief AI Officer)",
+    bio: "Specialist in distributed AI, federated learning, and privacy-preserving machine learning. Luca drives the AI research and development, with extensive expertise in large-scale audio-visual systems and decentralized learning architectures.",
+    image: founderLucaImage
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -66,9 +51,9 @@ const About = () => {
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }} />
+          backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }} />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
@@ -99,9 +84,7 @@ const About = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    To revolutionize industrial condition monitoring by delivering AI-powered insights 
-                    that respect data privacy, maintain security, and enable collaboration across 
-                    distributed facilities without compromising sensitive operational data.
+                    To revolutionize industrial condition monitoring by delivering trusted collaborative plug-and-play solutions that drive cost savings, preventing failures and improve resource efficiency without compromising sensitive data.
                   </p>
                 </CardContent>
               </Card>
@@ -161,16 +144,11 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Founders</span></h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {founders.map((founder, index) => (
-                <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
+              {founders.map((founder, index) => <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
                   <CardHeader>
                     {/* Profile picture */}
                     <div className="w-32 h-32 rounded-full mb-4 mx-auto overflow-hidden border-2 border-primary/20">
-                      <img 
-                        src={founder.image} 
-                        alt={`${founder.name} - ${founder.role}`}
-                        className="w-full h-full object-cover scale-110 object-[center_20%]"
-                      />
+                      <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-full h-full object-cover scale-110 object-[center_20%]" />
                     </div>
                     <CardTitle className="text-2xl text-center">{founder.name}</CardTitle>
                     <CardDescription className="text-center text-accent font-semibold">
@@ -182,8 +160,7 @@ const About = () => {
                       {founder.bio}
                     </p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -196,9 +173,8 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-12 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Values</span></h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map((value, index) => {
-                const Icon = value.icon;
-                return (
-                  <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:border-primary/30 transition-colors">
+              const Icon = value.icon;
+              return <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:border-primary/30 transition-colors">
                     <CardHeader>
                       <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                         <Icon className="h-6 w-6 text-primary" />
@@ -210,17 +186,14 @@ const About = () => {
                         {value.description}
                       </p>
                     </CardContent>
-                  </Card>
-                );
-              })}
+                  </Card>;
+            })}
             </div>
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
