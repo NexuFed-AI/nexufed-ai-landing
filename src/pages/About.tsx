@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Zap, Users, Lightbulb, Rocket, Lock, Target } from "lucide-react";
+import { Shield, Zap, Users, Lightbulb, Rocket, Handshake, Target } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
@@ -28,7 +28,7 @@ const About = () => {
     title: "Bias to Action",
     description: "We move quickly from idea to execution, learning from real-world feedback instead of waiting for perfect conditions."
   }, {
-    icon: Lock,
+    icon: Handshake,
     title: "Trust through Honesty",
     description: "We build trust through consistent honesty, clear communication, and we work hard to keep every commitment."
   }];
