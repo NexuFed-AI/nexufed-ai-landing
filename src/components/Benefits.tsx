@@ -50,7 +50,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
-              className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-accent"
+              className="p-6 text-center border-2"
             >
               <div className="inline-flex p-4 bg-accent/10 rounded-full mb-4">
                 <benefit.icon className="w-8 h-8 text-accent" />
