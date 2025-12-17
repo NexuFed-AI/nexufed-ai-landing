@@ -13,7 +13,7 @@ const Technology = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg">
+          <Card className="p-8 border-2">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-accent/10 rounded-lg">
                 <Lock className="w-6 h-6 text-accent" />
@@ -28,7 +28,7 @@ const Technology = () => {
             </div>
           </Card>
 
-          <Card className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg">
+          <Card className="p-8 border-2">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-accent/10 rounded-lg">
                 <Network className="w-6 h-6 text-accent" />
@@ -43,7 +43,7 @@ const Technology = () => {
             </div>
           </Card>
 
-          <Card className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg">
+          <Card className="p-8 border-2">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-accent/10 rounded-lg">
                 <Database className="w-6 h-6 text-accent" />
@@ -58,7 +58,7 @@ const Technology = () => {
             </div>
           </Card>
 
-          <Card className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg">
+          <Card className="p-8 border-2">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-accent/10 rounded-lg">
                 <Cpu className="w-6 h-6 text-accent" />
