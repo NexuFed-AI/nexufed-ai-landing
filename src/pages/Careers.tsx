@@ -91,7 +91,7 @@ const Careers = () => {
               {values.map((value, index) => {
                 const Icon = value.icon;
                 return (
-                  <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:border-primary/30 transition-colors">
+                  <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur">
                     <CardHeader>
                       <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                         <Icon className="h-6 w-6 text-primary" />
