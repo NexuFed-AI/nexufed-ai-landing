@@ -47,11 +47,8 @@ const Careers = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
-              <Briefcase className="h-8 w-8 text-primary" />
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Join Our Team
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-foreground">Join Our</span> <span className="text-brand-blue-bright">Team</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               Help us revolutionize industrial intelligence through privacy-preserving federated learning. 
@@ -65,7 +62,7 @@ const Careers = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Our Culture</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Culture</span></h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="leading-relaxed text-center mb-6">
                 At NexuFed AI, we're driven by a mission to make industrial AI both powerful and privacy-preserving. 
@@ -86,7 +83,7 @@ const Careers = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Why Join NexuFed AI</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center"><span className="text-foreground">Why Join</span> <span className="text-brand-blue-bright">NexuFed AI</span></h2>
             <div className="grid md:grid-cols-2 gap-6">
               {values.map((value, index) => {
                 const Icon = value.icon;
