@@ -38,7 +38,7 @@ const Problem = () => {
           {problems.map((problem, index) => (
             <Card 
               key={index}
-              className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg"
+              className="p-8 border-2"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-accent/10 rounded-lg flex-shrink-0">

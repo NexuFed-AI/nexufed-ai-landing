@@ -26,7 +26,7 @@ const Approach = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {features.map((feature, index) => <Card key={index} className="p-8 border-2 hover:border-accent transition-all duration-300 hover:shadow-lg">
+          {features.map((feature, index) => <Card key={index} className="p-8 border-2">
               <div className="flex flex-col items-start">
                 <div className="p-3 bg-accent/10 rounded-lg mb-4">
                   <feature.icon className="w-6 h-6 text-accent" />
