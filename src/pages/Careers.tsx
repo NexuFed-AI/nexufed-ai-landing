@@ -133,7 +133,7 @@ const Careers = () => {
                   className="bg-[#0A66C2] hover:bg-[#004182] text-white font-semibold px-8 py-6 text-lg"
                   onClick={() => {
                     trackEvent('click', 'Careers', 'LinkedIn Jobs Button');
-                    window.open('https://www.linkedin.com/company/nexufed-ai', '_blank');
+                    window.open('https://www.linkedin.com/company/nexufed/jobs', '_blank');
                   }}
                 >
                   View Jobs on LinkedIn
