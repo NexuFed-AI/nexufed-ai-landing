@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Briefcase, Users, Lightbulb, Globe, Shield, Zap } from "lucide-react";
+import { Briefcase, Users, Lightbulb, Shield, Zap } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { usePageTracking, trackEvent } from "@/hooks/useAnalytics";
@@ -11,23 +11,23 @@ const Careers = () => {
   const values = [
     {
       icon: Lightbulb,
-      title: "Cutting-Edge Research",
-      description: "Work on state-of-the-art federated learning and privacy-preserving AI technologies."
+      title: "Innovation With Purpose",
+      description: "We push boundaries where it counts—turning advanced ideas into products people rely on. Progress is exciting, impact is the goal."
     },
     {
       icon: Shield,
-      title: "Privacy-First Innovation",
-      description: "Build systems that respect data sovereignty and push the boundaries of secure AI."
+      title: "High Trust, Low Ego",
+      description: "We collaborate with respect, share context openly, and challenge ideas—not people. We move faster when everyone feels safe to speak up."
     },
     {
       icon: Zap,
-      title: "Real-World Impact",
-      description: "Shape the future of industrial condition monitoring with technology that matters."
+      title: "Growth Mindset",
+      description: "We learn fast, share knowledge, and improve through feedback. Curiosity and accountability matter more than having all the answers upfront."
     },
     {
-      icon: Globe,
-      title: "Hybrid & Flexible",
-      description: "Enjoy a research-friendly culture with flexible work arrangements."
+      icon: Users,
+      title: "Teamwork Across Roles",
+      description: "Breakthroughs happen when research, product, business, and operations move together. We respect different strengths and align on outcomes."
     }
   ];
 
