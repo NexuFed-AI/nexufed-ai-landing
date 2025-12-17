@@ -133,7 +133,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center"><span className="text-foreground">Our</span> <span className="text-brand-blue-bright">Founders</span></h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {founders.map((founder, index) => <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
+              {founders.map((founder, index) => <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur">
                   <CardHeader>
                     {/* Profile picture */}
                     <div className="w-32 h-32 rounded-full mb-4 mx-auto overflow-hidden border-2 border-primary/20">
@@ -163,7 +163,7 @@ const About = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map((value, index) => {
               const Icon = value.icon;
-              return <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur hover:border-primary/30 transition-colors">
+              return <Card key={index} className="border-primary/10 bg-card/50 backdrop-blur">
                     <CardHeader>
                       <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                         <Icon className="h-6 w-6 text-primary" />
