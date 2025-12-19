@@ -9,8 +9,8 @@ const Partners = () => {
     { name: "Ruhr-Universität Bochum", logo: partnerRUB },
   ];
 
-  // Duplicate partners for seamless infinite scroll
-  const duplicatedPartners = [...partners, ...partners, ...partners, ...partners];
+  // Duplicate once for seamless loop (animation moves -50% so we need 2 sets)
+  const duplicatedPartners = [...partners, ...partners];
 
   return (
     <div className="py-12 mb-12">
@@ -22,21 +22,20 @@ const Partners = () => {
 
       {/* Infinite scroll container */}
       <div className="relative overflow-hidden">
-        {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-muted/30 to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-muted/30 to-transparent z-10" />
-        
-        {/* Scrolling track */}
-        <div className="flex animate-scroll">
+        {/* Scrolling track - uses CSS animation for smooth infinite loop */}
+        <div 
+          className="flex w-max animate-scroll"
+          style={{ willChange: 'transform' }}
+        >
           {duplicatedPartners.map((partner, index) => (
             <div
               key={`${partner.name}-${index}`}
-              className="flex-shrink-0 mx-12 flex items-center justify-center"
+              className="flex-shrink-0 px-16 flex items-center justify-center"
             >
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="h-12 md:h-16 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
