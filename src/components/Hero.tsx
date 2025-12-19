@@ -190,7 +190,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">Revolutionizing industrial condition monitoring through privacy-preserving collaborative AI. Train powerful models without centralizing sensitive data.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={() => scrollToSection("roadmap")} className="bg-accent hover:bg-accent/90 text-lg group">
+            <Button size="lg" onClick={() => scrollToSection("contact")} className="bg-accent hover:bg-accent/90 text-lg group">
               Get in touch
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
