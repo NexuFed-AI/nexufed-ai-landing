@@ -49,7 +49,7 @@ const RoadmapAndContact = () => {
         <Partners />
 
         {/* Contact Section */}
-        <div id="contact" className="text-center mb-12 pt-8">
+        <div id="contact" className="text-center mb-12 pt-8 scroll-mt-24">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Let's <span className="text-brand-blue-bright">connect</span>
           </h2>
