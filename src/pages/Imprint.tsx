@@ -17,9 +17,17 @@ const Imprint = () => {
               <h2 className="text-2xl font-bold mb-4 text-primary">
                 Information according to §5 Digital Services Act (DDG)
               </h2>
-              <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI.</p>
               <p className="leading-relaxed mb-4">
-                <strong>NexuFed AI – René Glitza und Luca Becker GbR</strong>
+                This website is operated by the project team of NexuFed AI, a research/startup project of the
+                Worldfactory Start-up Center at Ruhr-University Bochum.
+              </p>
+              <p className="leading-relaxed mb-4">
+                <strong>Authorized representative and responsible for the project:</strong>
+                <br />
+                René Glitza
+                <br />
+                Luca Becker
+                <br />
                 <br />
                 c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)
                 <br />
@@ -29,13 +37,6 @@ const Imprint = () => {
                 44803 Bochum
                 <br />
                 Germany
-              </p>
-              <p className="leading-relaxed mb-4">
-                <strong>Authorized representative and responsible for the project:</strong>
-                <br />
-                René Glitza
-                <br />
-                Luca Becker
               </p>
               <p className="leading-relaxed mb-4">
                 <strong>Contact:</strong>
