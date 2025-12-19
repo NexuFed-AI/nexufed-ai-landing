@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FlaskConical, Rocket, TrendingUp, Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { trackEvent } from "@/hooks/useAnalytics";
+import Partners from "@/components/Partners";
 const RoadmapAndContact = () => {
   const roadmapSteps = [{
     icon: FlaskConical,
@@ -43,6 +44,9 @@ const RoadmapAndContact = () => {
         <div className="mb-16 text-center">
           
         </div>
+
+        {/* Partners Section */}
+        <Partners />
 
         {/* Contact Section */}
         <div className="text-center mb-12">
