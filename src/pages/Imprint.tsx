@@ -3,7 +3,8 @@ import Footer from "@/components/Footer";
 import { usePageTracking } from "@/hooks/useAnalytics";
 const Imprint = () => {
   usePageTracking();
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       <main className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto">
@@ -16,19 +17,21 @@ const Imprint = () => {
               <h2 className="text-2xl font-bold mb-4 text-primary">
                 Information according to §5 Digital Services Act (DDG)
               </h2>
-              <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI, a research/startup project by the Worldfactory Start-up Center of the Ruhr University Bochum</p>
-              
-              <p className="leading-relaxed mb-4">Authorized representative and responsible for the project:
-René Glitza
-Luca Becker
-
-
-NexuFed AI – René Glitza und Luca Becker GbR
-c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)
-Hans-Dobbertin-Str. 8
-Universitätsstraße 150
-44803 Bochum
-Germany<strong>Authorized representative and responsible for the project:</strong>
+              <p className="leading-relaxed mb-4">This website is operated by the project team of NexuFed AI.</p>
+              <p className="leading-relaxed mb-4">
+                <strong>NexuFed AI – René Glitza und Luca Becker GbR</strong>
+                <br />
+                c/o Zentrum für das Engineering Smarter Produkt-Service Systeme (ZESS)
+                <br />
+                Hans-Dobbertin-Str. 8<br />
+                Universitätsstraße 150
+                <br />
+                44803 Bochum
+                <br />
+                Germany
+              </p>
+              <p className="leading-relaxed mb-4">
+                <strong>Authorized representative and responsible for the project:</strong>
                 <br />
                 René Glitza
                 <br />
@@ -137,6 +140,7 @@ Germany<strong>Authorized representative and responsible for the project:</stron
         </div>
       </main>
       <Footer />
-    </div>;
+    </div>
+  );
 };
 export default Imprint;
